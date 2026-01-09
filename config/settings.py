@@ -8,14 +8,18 @@ Store all credentials and configuration variables here
 MONGODB_URI = "mongodb+srv://samaabuzahra158_db_user:S95ZBCmvLdUUiAOr@aucadvising.1b70f4p.mongodb.net/?appName=aucadvising"
 DATABASE_NAME = "auc_advising"
 COURSES_COLLECTION = "courses"
+CATALOGS_COLLECTION = "catalogs"  
 
 # ============ LLM CONFIGURATION ============
-GOOGLE_API_KEY = "AIzaSyBuxkfMlqR_cj4tdVASjDF8k4pqDrxWBVs"
+GOOGLE_API_KEY = "AIzaSyAIcD_j5wJHJkZEsk_PTI_cp_Qn1zv6z2o"
 LLM_MODEL = "gemini-2.5-flash"
 LLM_TEMPERATURE = 0
 
 # ============ AGENT CONFIGURATION ============
 MAX_ITERATIONS = 5
+
+# ============ DEFAULT CATALOG ============
+DEFAULT_CATALOG_YEAR = "2024-2025"  # NEW - default catalog to use
 
 # ============ DATABASE SCHEMA DOCUMENTATION ============
 DATABASE_SCHEMA = """
@@ -41,9 +45,26 @@ Collection: courses
   * department_code: string (e.g., "CSCE")
   * department_name: string (e.g., "Computer Science and Engineering")
 
+Collection: catalogs
+- Each document represents a program catalog for a specific year
+- Fields:
+  * catalog_id: string (e.g., "catalog_2024-2025")
+  * program_id: string (e.g., "PROGRAM:CE_BS")
+  * title: string (program title)
+  * degree_type: string (e.g., "Bachelor of Science")
+  * total_credits_required: number
+  * description: string
+  * specializations: array of specialization objects
+  * program_requirements: object containing:
+    - core_curriculum: core requirements
+    - engineering_core: engineering requirements
+    - concentration: major-specific requirements
+    - concentration_electives: elective requirements
+    - general_electives: general elective requirements
+
 Example Query Patterns:
 1. Find by course code: {{"course_code": {{"$regex": "^CSCE 1001$", "$options": "i"}}}}
 2. Find by department: {{"department_code": "CSCE"}}
-3. Find courses that are prerequisites for X: {{"relationships.is_prerequisite_for": "COURSE:CSCE_1001"}}
+3. Find catalog by ID: {{"catalog_id": "catalog_2024-2025", "program_id": "PROGRAM:CE_BS"}}
 4. Search by keyword in title or description: {{"$or": [{{"title": {{"$regex": "keyword", "$options": "i"}}}}, {{"canonical_description": {{"$regex": "keyword", "$options": "i"}}}}]}}
 """

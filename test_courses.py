@@ -1,7 +1,7 @@
 # main.py
 """
 AUC Advising Chatbot - Main Entry Point
-Full multi-agent system with Router Agent
+Simple version with Course Info Agent only (for testing)
 """
 
 import sys
@@ -13,25 +13,18 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from support.context_manager import ContextManager
 from support.knowledge_base import KnowledgeBase
 from agents.course_info_agent import CourseInfoAgent
-from agents.academic_planning_agent import AcademicPlanningAgent
-from agents.router_agent import RouterAgent
 
 
 def print_welcome():
     """Print welcome message"""
     print("=" * 60)
-    print("AUC ADVISING CHATBOT - Multi-Agent System")
+    print("AUC ADVISING CHATBOT - Course Info Agent (Test Version)")
     print("=" * 60)
-    print("\nAvailable Agents:")
-    print("✓ Course Information Agent - Course details, prerequisites, search")
-    print("✓ Academic Planning Agent - Degree requirements, catalogs, specializations")
-    print("✓ Router Agent - Automatically routes your questions")
     print("\nFeatures:")
-    print("• Intelligent question routing")
-    print("• Course information and prerequisites")
-    print("• Degree planning and requirements")
-    print("• Catalog information and specializations")
-    print("• Context-aware conversations")
+    print("✓ Course details and information")
+    print("✓ Prerequisites checking (understands AND/OR logic)")
+    print("✓ Course search by department or keyword")
+    print("✓ Prerequisite chain analysis")
     print("\nCommands:")
     print("• 'quit' or 'exit' - Exit the chatbot")
     print("• 'clear' - Clear conversation history")
@@ -66,14 +59,6 @@ def handle_special_commands(user_input: str, context_manager: ContextManager) ->
         print("="*50)
         summary = context_manager.get_context_summary()
         print(summary)
-        
-        # Show which agents have been used
-        agents_used = context_manager.get_agents_used()
-        if agents_used:
-            print("\nAgents Consulted:")
-            for agent in agents_used:
-                print(f"  • {agent}")
-        
         print("="*50)
         print()
         return True
@@ -87,7 +72,7 @@ def handle_special_commands(user_input: str, context_manager: ContextManager) ->
         if major:
             context_manager.set_major(major)
         
-        catalog_year = input("Catalog Year (e.g., 2024) [press Enter to skip]: ").strip()
+        catalog_year = input("Catalog Year (e.g., 2023) [press Enter to skip]: ").strip()
         if catalog_year:
             try:
                 context_manager.set_catalog_year(int(catalog_year))
@@ -117,20 +102,7 @@ def main():
     print("Initializing...")
     context_manager = ContextManager()
     knowledge_base = KnowledgeBase()
-    
-    # Initialize specialized agents
     course_agent = CourseInfoAgent(context_manager, knowledge_base)
-    planning_agent = AcademicPlanningAgent(context_manager, knowledge_base)
-    
-    # Create agents dictionary
-    agents = {
-        "course_info": course_agent,
-        "academic_planning": planning_agent,
-    }
-    
-    # Initialize router agent
-    router = RouterAgent(context_manager, knowledge_base, agents)
-    
     print("✓ Ready!\n")
     
     # Main conversation loop
@@ -155,10 +127,10 @@ def main():
             # Add to conversation history
             context_manager.add_message("user", user_input)
             
-            # Process with router (which routes to appropriate agent)
-            print()
-            response = router.route(user_input)
-            print(f"\nAdvisor: {response}")
+            # Process with agent
+            print("\nAdvisor: ", end="", flush=True)
+            response = course_agent.process(user_input)
+            print(response)
             print()
             
             # Add response to history
@@ -170,8 +142,6 @@ def main():
         except Exception as e:
             print(f"\n✗ Error: {e}")
             print("Please try again or type 'quit' to exit.\n")
-            import traceback
-            traceback.print_exc()
     
     # Cleanup
     knowledge_base.close()

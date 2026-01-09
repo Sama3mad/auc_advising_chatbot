@@ -1,18 +1,18 @@
 # support/knowledge_base.py
 """
 Knowledge Base Access Layer
-Provides unified access to all data sources (MongoDB, catalog files, etc.)
+Provides unified access to all data sources (MongoDB courses, catalogs, etc.)
 This is NOT a tool - just raw data retrieval
 """
 
 from pymongo import MongoClient
 from typing import Optional, List, Dict, Any
-import sys 
+import sys
 import os
 
 # Add parent directory to path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from config.settings import MONGODB_URI, DATABASE_NAME, COURSES_COLLECTION
+from config.settings import MONGODB_URI, DATABASE_NAME, COURSES_COLLECTION, CATALOGS_COLLECTION
 
 
 class KnowledgeBase:
@@ -26,6 +26,7 @@ class KnowledgeBase:
         self.client = MongoClient(MONGODB_URI)
         self.db = self.client[DATABASE_NAME]
         self.courses = self.db[COURSES_COLLECTION]
+        self.catalogs = self.db[CATALOGS_COLLECTION]  # NEW - catalogs collection
     
     # ============ COURSE RETRIEVAL METHODS ============
     
@@ -200,36 +201,66 @@ class KnowledgeBase:
             return course.get("relationships", {}).get("equivalencies", [])
         return []
     
-    # ============ CATALOG METHODS (Placeholder for future) ============
+    # ============ CATALOG METHODS (NEW) ============
     
-    def get_catalog_requirements(self, major: str, year: int) -> Optional[Dict[str, Any]]:
+    def get_catalog_by_id(self, catalog_id: str, program_id: str = None) -> Optional[Dict[str, Any]]:
         """
-        Get catalog requirements for a specific major and year
-        TODO: Implement when catalog files are available
+        Get a specific catalog by ID
         
         Args:
-            major: Major code (e.g., "CS", "CE")
-            year: Catalog year
+            catalog_id: Catalog ID (e.g., "catalog_2024-2025")
+            program_id: Optional program ID filter (e.g., "PROGRAM:CE_BS")
             
         Returns:
-            Catalog requirements or None
+            Catalog document or None if not found
         """
-        # Placeholder - implement when catalog files are ready
-        return None
+        query = {"catalog_id": catalog_id}
+        if program_id:
+            query["program_id"] = program_id
+        return self.catalogs.find_one(query)
     
-    def get_policy(self, policy_name: str) -> Optional[Dict[str, Any]]:
+    def get_all_catalogs(self) -> List[Dict[str, Any]]:
         """
-        Get a specific university policy
-        TODO: Implement when policy documents are available
+        Get list of all available catalogs
+        
+        Returns:
+            List of catalog documents (with limited fields)
+        """
+        return list(self.catalogs.find({}, {"catalog_id": 1, "program_id": 1, "title": 1, "total_credits_required": 1}))
+    
+    def get_program_requirements(self, program_id: str, catalog_year: str) -> Optional[Dict[str, Any]]:
+        """
+        Get program requirements from a specific catalog
         
         Args:
-            policy_name: Name of the policy
+            program_id: Program ID (e.g., "PROGRAM:CE_BS")
+            catalog_year: Catalog year (e.g., "2024-2025")
             
         Returns:
-            Policy document or None
+            Program requirements dictionary or None
         """
-        # Placeholder - implement when policy documents are ready
+        catalog_id = f"catalog_{catalog_year}"
+        catalog = self.get_catalog_by_id(catalog_id, program_id)
+        if catalog:
+            return catalog.get("program_requirements")
         return None
+    
+    def get_specializations(self, program_id: str, catalog_year: str) -> List[Dict[str, Any]]:
+        """
+        Get available specializations for a program
+        
+        Args:
+            program_id: Program ID
+            catalog_year: Catalog year
+            
+        Returns:
+            List of specialization objects
+        """
+        catalog_id = f"catalog_{catalog_year}"
+        catalog = self.get_catalog_by_id(catalog_id, program_id)
+        if catalog:
+            return catalog.get("specializations", [])
+        return []
     
     # ============ CLEANUP ============
     
