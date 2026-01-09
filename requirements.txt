@@ -1,0 +1,19 @@
+# AUC Advising Chatbot - Dependencies
+
+# Database
+pymongo>=4.6.0
+
+# LangChain
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-google-genai>=0.0.11
+
+# Google Generative AI
+google-generativeai>=0.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional (for future enhancements)
+# pandas>=2.0.0  # For data analysis
+# numpy>=1.24.0  # For numerical operations
