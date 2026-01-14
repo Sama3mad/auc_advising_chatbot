@@ -8,11 +8,22 @@ Store all credentials and configuration variables here
 MONGODB_URI = "mongodb+srv://samaabuzahra158_db_user:S95ZBCmvLdUUiAOr@aucadvising.1b70f4p.mongodb.net/?appName=aucadvising"
 DATABASE_NAME = "auc_advising"
 COURSES_COLLECTION = "courses"
-CATALOGS_COLLECTION = "catalogs"  
+CATALOGS_COLLECTION = "catalogs"
+RULES_COLLECTION = "rules"  # Core policies and academic rules
+
+# Neo4j Configuration
+NEO4J_URI = "neo4j+s://6bd58e7f.databases.neo4j.io"
+NEO4J_USERNAME = "neo4j"
+NEO4J_PASSWORD = "jeiH1Na0rPA67jYospHTY2IjdLoq4AW23ujVAr_c7GM"
 
 # ============ LLM CONFIGURATION ============
-GOOGLE_API_KEY = "AIzaSyAIcD_j5wJHJkZEsk_PTI_cp_Qn1zv6z2o"
-LLM_MODEL = "gemini-2.5-flash"
+# Old Google Gemini configuration (commented out)
+# GOOGLE_API_KEY = "AIzaSyCu6FlhIzGqUXgUBs3lkZF2BarGCkerR3k"
+# LLM_MODEL = "gemini-2.5-flash"
+
+# New LLM configuration - Kwaipilot Kat Coder Pro
+KWAIPILOT_API_KEY = "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"  # Add your API key here
+LLM_MODEL = "kwaipilot/kat-coder-pro:free"
 LLM_TEMPERATURE = 0
 
 # ============ AGENT CONFIGURATION ============

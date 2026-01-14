@@ -4,7 +4,7 @@ Router Agent
 Analyzes user questions and routes them to the appropriate specialized agent
 """
 
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 import json
 import sys
 import os
@@ -12,7 +12,7 @@ import os
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from config.settings import GOOGLE_API_KEY, LLM_MODEL, LLM_TEMPERATURE
+from config.settings import KWAIPILOT_API_KEY, LLM_MODEL, LLM_TEMPERATURE
 from support.context_manager import ContextManager
 from support.knowledge_base import KnowledgeBase
 
@@ -32,9 +32,10 @@ class RouterAgent:
             knowledge_base: Knowledge base instance
             agents: Dictionary of available agents {"agent_name": agent_instance}
         """
-        self.llm = ChatGoogleGenerativeAI(
+        self.llm = ChatOpenAI(
             model=LLM_MODEL,
-            google_api_key=GOOGLE_API_KEY,
+            api_key=KWAIPILOT_API_KEY,
+            base_url="https://openrouter.ai/api/v1",
             temperature=LLM_TEMPERATURE
         )
         
@@ -100,6 +101,14 @@ Available Agents:
    - Handles: Degree requirements, catalog information, specializations, credit requirements, degree progress
    - Examples: "How many credits do I need?", "What are the core requirements?", "What specializations are available?", "What courses do I need for CE?"
 
+3. "policies" - Policy & Core Rules Agent
+   - Handles: University policies, Core Curriculum rules (freshman/secondary/capstone),
+              double counting rules, Arabic requirement, registration holds, probation/dismissal,
+              leaves of absence, withdrawal, transcripts, and general academic regulations.
+   - Examples: "Can a course double count for Core and my major?", "What are the rules for declaring my major?",
+               "What happens if I fail RHET 1010 three times?", "When do I need to take the Arabic placement exam?",
+               "What are the rules for planned leave of absence?"
+
 Your task:
 Analyze the question and decide which agent should handle it.
 
@@ -114,6 +123,8 @@ Rules:
 - Questions about SPECIALIZATIONS → "academic_planning"
 - Questions about CATALOGS or PROGRAM REQUIREMENTS → "academic_planning"
 - Questions about DEGREE PROGRESS → "academic_planning"
+- Questions about POLICIES, CORE CURRICULUM RULES, DOUBLE COUNTING, ARABIC REQUIREMENT,
+  REGISTRATION HOLDS, PROBATION/DISMISSAL, LEAVE OF ABSENCE, WITHDRAWAL, TRANSCRIPTS → "policies"
 - If unclear, default to "course_info"
 
 Question: """ + question + """

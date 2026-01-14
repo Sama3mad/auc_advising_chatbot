@@ -1,0 +1,2780 @@
+{
+    "departments": {
+      "CSCE": {
+        "department_name": "Computer Science and Engineering",
+        "courses": [
+          {
+            "course_master_id": "COURSE:CSCE_1001",
+            "course_code": "CSCE 1001",
+            "title": "Fundamentals of Computing I",
+            "canonical_description": "Introduces fundamental concepts and principles of computing systems, grand challenges in computing, analyzing and formulating solutions to multidisciplinary problems, basic algorithms for solving problems, as well as designing, implementing, and testing programs using one prime language and other supplementary languages. Using data and procedural abstractions as basic design principles, students learn how to design and implement basic data structures such as stacks and queues, and to apply various algorithms for operating on them. Also covers some numbering systems, data representation, and basic computer organization. The course uses the imperative and object-oriented paradigms.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:MACT_1111"
+            },
+            "prerequisite_human_readable": "College level preparation course in Mathematics or MACT 1111",
+            "prerequisite_courses": [
+              "COURSE:MACT_1111"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_1101",
+                "COURSE:CSCE_3101",
+                "COURSE:ECNG_2101"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_1101",
+            "course_code": "CSCE 1101",
+            "title": "Fundamentals of Computing II",
+            "canonical_description": "Introduces concepts and techniques for developing larger software systems. The object-oriented paradigm is further utilized using a modern programming language such as Java or C++. Covers topics that include classes and objects, inheritance, encapsulation, polymorphism, more algorithms, basic design patterns, generics, testing. Also covers the design and implementation of data structures including but not limited to lists, trees, and graphs.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_1001"
+            },
+            "prerequisite_human_readable": "CSCE 1001",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1001"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_2211",
+                "COURSE:CSCE_2303",
+                "COURSE:CSCE_2501",
+                "COURSE:CSCE_3701",
+                "COURSE:CSCE_3601",
+                "COURSE:CSCE_3602",
+                "COURSE:CSCE_4603",
+                "COURSE:CSCE_3102",
+                "COURSE:CSCE_3103",
+                "COURSE:CSCE_3104",
+                "COURSE:CSCE_3311"
+              ],
+              "corequisites": [
+                "COURSE:CSCE_1102"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_1102",
+            "course_code": "CSCE 1102",
+            "title": "Fundamentals of Computing II Lab",
+            "canonical_description": "The laboratory will contribute to the capacity building and practice of knowledge units covered in CSCE 1101 (Fundamentals of Computing II).",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": null,
+            "prerequisite_human_readable": "None",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [
+                "COURSE:CSCE_1101"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_2202",
+            "course_code": "CSCE 2202",
+            "title": "Analysis and Design of Algorithms",
+            "canonical_description": "Analysis and complexity bounds of basic classes of algorithms. Basic algorithm design methodologies: Brute force, Transform and Conquer, Divide and conquer, and Greedy methods. Dynamic Programming, Backtracking and Branch and Bound methods. Applications to problems such as sorting and searching, traveling salesperson, knapsack, optimal merge patterns and graph algorithms. Introduction to the theory of complexity.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_2131"
+                    },
+                    {
+                      "op": "CONCURRENT",
+                      "course_master_id": "COURSE:MACT_2131"
+                    }
+                  ]
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_2211"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 2131 (or concurrent) and CSCE 2211",
+            "prerequisite_courses": [
+              "COURSE:MACT_2131",
+              "COURSE:CSCE_2211"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4315"
+              ],
+              "corequisites": [
+                "COURSE:CSCE_2203"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_2203",
+            "course_code": "CSCE 2203",
+            "title": "Analysis and Design of Algorithms Lab",
+            "canonical_description": "The laboratory will contribute to the capacity building and practice of knowledge units covered in CSCE 2202 (Analysis and Design of Algorithms).",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_2131"
+                },
+                {
+                  "op": "CONCURRENT",
+                  "course_master_id": "COURSE:MACT_2131"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 2131 or concurrent",
+            "prerequisite_courses": [
+              "COURSE:MACT_2131"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [
+                "COURSE:CSCE_2202"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_2211",
+            "course_code": "CSCE 2211",
+            "title": "Applied Data Structures",
+            "canonical_description": "In depth coverage of applied data structures needed by computing professionals. Includes but not limited to: Abstract data types and classes, analysis of algorithms, trees, binary search trees, dictionaries, self-balancing trees, B-Trees, red black trees, heaps, priority queues, sets, and graphs. Practical usage of the data structures is covered.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_1101"
+            },
+            "prerequisite_human_readable": "CSCE 1101",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_2202",
+                "COURSE:CSCE_3401"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_2301",
+            "course_code": "CSCE 2301",
+            "title": "Digital Design I",
+            "canonical_description": "Basic logic gates, Boolean algebra, logic minimization algorithms, modular design of combinational circuits, introduction to computer arithmetic, memory elements, sequential circuits, Finite State Machines analysis and design, top-down digital systems design approach, timing aspects of digital systems. Exposure to modern Electronic Design Automation tools, Hardware Description Languages and programmable logic devices. The laboratory component will cover experiments in digital electronics.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:PHYS_2211"
+                },
+                {
+                  "op": "CONCURRENT",
+                  "course_master_id": "COURSE:PHYS_2211"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "PHYS 2211 or concurrent",
+            "prerequisite_courses": [
+              "COURSE:PHYS_2211"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_2303",
+                "COURSE:CSCE_3301",
+                "COURSE:CSCE_3303",
+                "COURSE:CSCE_3304"
+              ],
+              "corequisites": [
+                "COURSE:CSCE_2302"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_2302",
+            "course_code": "CSCE 2302",
+            "title": "Digital Design I Lab",
+            "canonical_description": "The laboratory will cover experiments in digital design and experiments illustrating material of course CSCE 2301.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": null,
+            "prerequisite_human_readable": "None",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [
+                "COURSE:CSCE_2301"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_2303",
+            "course_code": "CSCE 2303",
+            "title": "Computer Organization and Assembly Language Programming",
+            "canonical_description": "Instruction set architecture, computer performance (affecting factors and metrics), computer arithmetics (integers and floating-point numbers), assembly programming and the corresponding machine code (RISC and CISC architectures), the instruction cycle, the interrupt cycle, the memory hierarchy, and caching.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_1101"
+                },
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "CONCURRENT",
+                      "course_master_id": "COURSE:CSCE_2301"
+                    },
+                    {
+                      "op": "CONCURRENT",
+                      "course_master_id": "COURSE:ECNG_2101"
+                    }
+                  ]
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 1101 and (CSCE 2301 or ECNG 2101 concurrent)",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_3301"
+              ],
+              "corequisites": [
+                "COURSE:CSCE_2301",
+                "COURSE:ECNG_2101"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_2501",
+            "course_code": "CSCE 2501",
+            "title": "Fundamentals of Database Systems",
+            "canonical_description": "Basic concepts, database system environment, DBMS. Components and architecture access structures, indexing and hashing, high-level data models, ER, the relational model, relational languages, relational algebra, relational calculus, SQL, functional dependencies and normalization, database security, query evaluation and optimization techniques, distributed database systems architecture and an introduction to NOSQL Databases.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_1101"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:DSCI_1412"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 1101 or DSCI 1412",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101",
+              "COURSE:DSCI_1412"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4424",
+                "COURSE:CSCE_4501",
+                "COURSE:CSCE_4502"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4980",
+            "course_code": "CSCE 4980",
+            "title": "Senior Project I",
+            "canonical_description": "Participating students select project topic according to their subject of interest and the availability of facilities and advisers. Students carry out necessary preliminary work, which involves initial design space exploration, and submit a progress report. Ethical responsibilities of a computing professional are covered by lectures and seminars and emphasized through the student's teamwork.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "APPROVAL",
+              "type": "instructor"
+            },
+            "prerequisite_human_readable": "Instructor approval",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4981"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4981",
+            "course_code": "CSCE 4981",
+            "title": "Senior Project II",
+            "canonical_description": "Participating students carry on the plan of work they developed in CSCE 4980. Students use all of their acquired knowledge toward the design, implementation, testing, and documentation of a product. Each participant gives an oral presentation of his/her results. On the approval of the supervisor, each group prepares and presents a complete package. Further ethical issues of the computing profession are covered and emphasized all over the course work.",
+            "credits": 2,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_4980"
+            },
+            "prerequisite_human_readable": "CSCE 4980",
+            "prerequisite_courses": [
+              "COURSE:CSCE_4980"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3101",
+            "course_code": "CSCE 3101",
+            "title": "Programming Language",
+            "canonical_description": "A programming language different from those studied in CSCE 1001 and CSCE 1101 will be presented according to the interest of both students and faculty.",
+            "credits": "1-3",
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Occasionally",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_1001"
+            },
+            "prerequisite_human_readable": "CSCE 1001",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1001"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025",
+              "notes": "Students may repeat this course with different languages but only a maximum of four credits can be counted toward the concentration requirements"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3102",
+            "course_code": "CSCE 3102",
+            "title": "Programming in Java",
+            "canonical_description": "This course offers intermediate programming concepts in the Java programming language to include virtual machines, dynamic type checking, object serialization, inheritance and polymorphism, file manipulation, interfaces and packages. Java Applets, event handling, multithreading and network-based application development in Java are also covered along with a set of selected topics such as remote method invocation and remote database access using the language.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Occasionally",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_1101"
+            },
+            "prerequisite_human_readable": "CSCE 1101",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3103",
+            "course_code": "CSCE 3103",
+            "title": "Object Oriented Programming",
+            "canonical_description": "In-depth study of a typical object-oriented programming language (C++) from a software engineering perspective, with emphasis on features supporting the development of large, efficient and reusable object-oriented applications. Principles and practice of three software development paradigms: developing classes from scratch, reuse of existing classes, incremental extension of frameworks. Encapsulation, templates, polymorphism, dynamic binding and virtual methods, operator's overloading, complex associations, dynamic aggregation, inheritance (single and multiple), exception handling, the standard template library. Introduction to UML for describing program designs.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Occasionally",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_1101"
+            },
+            "prerequisite_human_readable": "CSCE 1101",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:DSGN_3400"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3104",
+            "course_code": "CSCE 3104",
+            "title": "Concepts of Programming Languages",
+            "canonical_description": "Comparative study of abstraction, syntax, semantics, binding times, data and sequence control, run-time resources, translators, and storage of programming languages. Programming projects using selected programming languages to enhance practical aspects.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_1101"
+            },
+            "prerequisite_human_readable": "CSCE 1101",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4101"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3301",
+            "course_code": "CSCE 3301",
+            "title": "Computer Architecture",
+            "canonical_description": "Instruction set architectures design, CPU microarchitectures including datapath and control unit design, register transfer language, single-cycle implementation, pipelining, hazards, branch prediction, I/O systems and busses, Instruction-level parallelism, static and dynamic multiple-issue architectures, dynamic scheduling, speculation, SIMD and vector architectures, synchronization, virtual memory, and cache coherence.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:CSCE_2301"
+                    },
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:ECNG_2101"
+                    }
+                  ]
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_2303"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "(CSCE 2301 or ECNG 2101) and CSCE 2303",
+            "prerequisite_courses": [
+              "COURSE:CSCE_2301",
+              "COURSE:ECNG_2101",
+              "COURSE:CSCE_2303"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_3304",
+                "COURSE:CSCE_3401",
+                "COURSE:CSCE_4301",
+                "COURSE:CSCE_4423"
+              ],
+              "corequisites": [
+                "COURSE:CSCE_3302"
+              ],
+              "equivalencies": [
+                "COURSE:ECNG_4505"
+              ]
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3302",
+            "course_code": "CSCE 3302",
+            "title": "Computer Architecture Lab",
+            "canonical_description": "The laboratory will cover experiments in computer architecture and hardware design and experiments illustrating material of course CSCE 3301.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": null,
+            "prerequisite_human_readable": "None",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [
+                "COURSE:CSCE_3301"
+              ],
+              "equivalencies": [
+                "COURSE:ECNG_4508L"
+              ]
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3303",
+            "course_code": "CSCE 3303",
+            "title": "Fundamental Microelectronics",
+            "canonical_description": "The course covers topics related to electronic devices and their applications such as diodes, transistors (BJT and MOSFET), and operational amplifiers with an emphasis on digital CMOS circuits design, simulation and analysis.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:PHYS_2211"
+                },
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:CSCE_2301"
+                    },
+                    {
+                      "op": "CONCURRENT",
+                      "course_master_id": "COURSE:CSCE_2301"
+                    }
+                  ]
+                }
+              ]
+            },
+            "prerequisite_human_readable": "PHYS 2211 and CSCE 2301 or concurrent",
+            "prerequisite_courses": [
+              "COURSE:PHYS_2211",
+              "COURSE:CSCE_2301"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_3304"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3304",
+            "course_code": "CSCE 3304",
+            "title": "Digital Design II",
+            "canonical_description": "VLSI fabrication, Design of complex CMOS cells, Combinational and Sequential logic structures in VLSI; Introduction of ASIC design techniques and tools; design and programming of FPGAs using CAD tools; timing in sequential circuits; Digital systems design; Modeling and simulation; Fault models and testing.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3301"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3303"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 3301 and CSCE 3303",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3301",
+              "COURSE:CSCE_3303"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4303"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3311",
+            "course_code": "CSCE 3311",
+            "title": "Data and Computer Communications",
+            "canonical_description": "Overview the network protocol stack and TCP/IP. Data transmission technologies, transmission impairments and channel capacity. Basics of wired and wireless transmission media. Signal encoding techniques. Introduction to error detection and correction. LAN fundamentals, Ethernet LANs, WLANs and MAC protocols. Cellular networks fundamental concepts and evolution from 1G to 5G networks.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_1101"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:PHYS_2211"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 1101 and PHYS 2211",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101",
+              "COURSE:PHYS_2211"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3312",
+            "course_code": "CSCE 3312",
+            "title": "Computer Networks",
+            "canonical_description": "Covers the fundamentals of computer networking. Topics include Introduction to computer networks, historical perspective and types, switching techniques, the concept of layering, network performance metrics, data link layer, network layer, IP networking and addressing, and the transport layer.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:PHYS_2211"
+                },
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_3211"
+                    },
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_3224"
+                    }
+                  ]
+                }
+              ]
+            },
+            "prerequisite_human_readable": "PHYS 2211 and (MACT 3211 or MACT 3224)",
+            "prerequisite_courses": [
+              "COURSE:PHYS_2211",
+              "COURSE:MACT_3211",
+              "COURSE:MACT_3224"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4301"
+              ],
+              "corequisites": [
+                "COURSE:CSCE_3313"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3313",
+            "course_code": "CSCE 3313",
+            "title": "Computer Networks Lab",
+            "canonical_description": "Offers hands-on experience in the area of computer networks. This includes basic network components, equipment, and experiments on network monitoring and virtualization tools, link layer, network layer, transport layer and application layer protocols, along with well-known static and dynamic routing protocols, in use in the Internet today.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": null,
+            "prerequisite_human_readable": "None",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [
+                "COURSE:CSCE_3312"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3401",
+            "course_code": "CSCE 3401",
+            "title": "Operating Systems",
+            "canonical_description": "Operating systems concepts and structure. The Kernel, interrupts, system calls. Process concepts, operations, and implementation. Threads. Concurrency, interprocess communication and synchronization. Process scheduling. Resources and deadlocks. Memory management: swapping, paging, segmentation, virtual memory. File system interface, protection. Case studies: Windows, Linux, and MINIX.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_2211"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3301"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 2211 and CSCE 3301",
+            "prerequisite_courses": [
+              "COURSE:CSCE_2211",
+              "COURSE:CSCE_3301"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4301",
+                "COURSE:CSCE_4411",
+                "COURSE:CSCE_4702"
+              ],
+              "corequisites": [
+                "COURSE:CSCE_3423"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3611",
+            "course_code": "CSCE 3611",
+            "title": "Digital Signal Processing",
+            "canonical_description": "Characterizations of signals, ADC and DAC, Fourier series and Fourier transform for discrete and continuous time signals, sampling, Digital spectrum analysis, discrete transforms, digital filters, audio and image processing applications.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:PHYS_2211"
+                },
+                {
+                  "op": "STANDING",
+                  "level": "junior"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "PHYS 2211 and junior standing",
+            "prerequisite_courses": [
+              "COURSE:PHYS_2211"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3701",
+            "course_code": "CSCE 3701",
+            "title": "Software Engineering",
+            "canonical_description": "Basic concepts of software engineering project management, ethical and social issues as well as the software development life cycle. Techniques for software specification, design, implementation, validation, verification and documentation. State-of-the art tools for computer-aided software engineering (CASE tools) are used to support term projects.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_1101"
+            },
+            "prerequisite_human_readable": "CSCE 1101",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4702"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4101",
+            "course_code": "CSCE 4101",
+            "title": "Compiler Design",
+            "canonical_description": "Principles and practices in the design of compilers. Lexical analysis. Syntax analysis, top-down and bottom-up parsing. Syntax-directed translation and syntax trees. Declarations, types, and symbol management. Run-time environments, storage organization, parameter passing, dynamic storage allocation. Intermediate languages and intermediate code generation. Code generation and optimization.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_3104"
+            },
+            "prerequisite_human_readable": "CSCE 3104",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3104"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025",
+              "notes": "Project: students construct a simple compiler that generates unoptimized code."
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4201",
+            "course_code": "CSCE 4201",
+            "title": "Theory of Computing",
+            "canonical_description": "Finite automata and regular expressions, context-free grammars and push-down automata, nondeterminism. Context-sensitive grammars and the Chomsky hierarchy of grammars. Turing machine and the halting problem. Undecidable problems. Church's Conjecture and its implications.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_2131"
+                },
+                {
+                  "op": "STANDING",
+                  "level": "senior"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 2131 and Senior standing",
+            "prerequisite_courses": [
+              "COURSE:MACT_2131"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4301",
+            "course_code": "CSCE 4301",
+            "title": "Embedded Systems",
+            "canonical_description": "This is a hands-on course on the theory and practice of developing low-power embedded systems with real-time constraints. Students will learn how to develop embedded hardware and software, interface a variety of sensors and actuators for interactive systems, communicate over embedded networks and use RTOS kernel to develop embedded software. The course will culminate with a significant project which will extend the concepts covered earlier in the course.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3301"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3401"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3312"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 3301, CSCE 3401, and CSCE 3312",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3301",
+              "COURSE:CSCE_3401",
+              "COURSE:CSCE_3312"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4303"
+              ],
+              "corequisites": [
+                "COURSE:CSCE_4302"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4302",
+            "course_code": "CSCE 4302",
+            "title": "Embedded Systems Lab",
+            "canonical_description": "The laboratory will cover experiments in embedded systems illustrating material of course CSCE 4301.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": null,
+            "prerequisite_human_readable": "None",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [
+                "COURSE:CSCE_4301"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4411",
+            "course_code": "CSCE 4411",
+            "title": "Fundamentals of Distributed Systems",
+            "canonical_description": "Introduction to distributed systems. Modeling, specifications, consistency, fault tolerance, interprocess communication, network and distributed operating systems, distributed mutual exclusion, distributed deadlock detection, load balancing and process migration.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_3401"
+            },
+            "prerequisite_human_readable": "CSCE 3401",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3401"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4950",
+            "course_code": "CSCE 4950",
+            "title": "Industrial Training",
+            "canonical_description": "Each student is required to spend a minimum of eight weeks in training related to the computing domain in Egypt or abroad. Students need to follow guidelines published by the department. Evidence, including references are provided demonstrating the nature and duration of training. A report followed by discussion is submitted to a departmental committee for evaluation.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "STANDING",
+                  "level": "junior"
+                },
+                {
+                  "op": "APPROVAL",
+                  "type": "instructor"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "Junior standing and approval of instructor",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024",
+              "notes": "Graded pass or fail"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4980",
+            "course_code": "CSCE 4980",
+            "title": "Senior Project I",
+            "canonical_description": "Participating students select project topic according to their subject of interest and the availability of facilities and advisers. Students carry out necessary preliminary work, which involves initial design space exploration, and submit a progress report. Ethical responsibilities of a computing professional are covered by lectures and seminars and emphasized through the student's teamwork.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "APPROVAL",
+              "type": "instructor"
+            },
+            "prerequisite_human_readable": "Instructor approval",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4981"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4981",
+            "course_code": "CSCE 4981",
+            "title": "Senior Project II",
+            "canonical_description": "Participating students carry on the plan of work they developed in CSCE 4980. Students use all of their acquired knowledge toward the design, implementation, testing, and documentation of a product. Each participant gives an oral presentation of his/her results. On the approval of the supervisor, each group prepares and presents a complete package. Further ethical issues of the computing profession are covered and emphasized all over the course work.",
+            "credits": 2,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_4980"
+            },
+            "prerequisite_human_readable": "CSCE 4980",
+            "prerequisite_courses": [
+              "COURSE:CSCE_4980"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3423",
+            "course_code": "CSCE 3423",
+            "title": "Introduction to Cybersecurity",
+            "canonical_description": "Secure Network Architecture and Components, Network Attacks, Router Hardening, Secure Communications, Secure Campus Network, Significance of security protocols and frameworks, Security Governance Through Principles and Policies, Personnel Security and Risk Management Concepts, Business Continuity Planning, Laws, Regulations, and Compliance, Protecting Security of Assets, Cryptography and Symmetric Key Algorithms, PKI and Cryptographic Applications, Principles of Security Models, Design, and Capabilities; Security Vulnerabilities, Threats, and Countermeasures, Controlling and Monitoring Access, Security Assessment and Testing, Preventing and Responding to Incidents, Disaster Recovery Planning.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall",
+            "prerequisite_ast": {
+              "op": "CONCURRENT",
+              "course_master_id": "COURSE:CSCE_3401"
+            },
+            "prerequisite_human_readable": "Concurrent with CSCE 3401",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4421"
+              ],
+              "corequisites": [
+                "COURSE:CSCE_3401"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3601",
+            "course_code": "CSCE 3601",
+            "title": "Fundamentals of Artificial Intelligence",
+            "canonical_description": "The course will introduce students to the main foundational concepts and techniques used in Artificial Intelligence including searching and problem solving methods, representing knowledge, dealing with uncertainty, probabilistic reasoning, planning, learning decision rules from data, and statistical learning.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_1101"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:DSCI_1412"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 1101 or DSCI 1412",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101",
+              "COURSE:DSCI_1412"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_3602",
+            "course_code": "CSCE 3602",
+            "title": "Fundamentals of Machine Learning",
+            "canonical_description": "Data Preparation and Preprocessing, Feature Extraction and Engineering, Supervised Learning Methods including Probabilistic Classifiers (Naive Bayes and Bayesian Networks), Rule-based Methods (Decision Trees and Random Forests), Instance Based Learning (KNNs), Support Vector Machines, and Introduction to Neural Networks, Unsupervised Learning Methods including k-means Clustering, MLE, Expectation Maximization, and Affinity Propagation.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Once a year",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:DSCI_1412"
+                    },
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:CSCE_1101"
+                    }
+                  ]
+                },
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_3223"
+                    },
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_3224"
+                    }
+                  ]
+                }
+              ]
+            },
+            "prerequisite_human_readable": "(DSCI 1412 or CSCE 1101) and (MACT 3223 or MACT 3224)",
+            "prerequisite_courses": [
+              "COURSE:DSCI_1412",
+              "COURSE:CSCE_1101",
+              "COURSE:MACT_3223",
+              "COURSE:MACT_3224"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4602",
+                "COURSE:CSCE_4604",
+                "COURSE:CSCE_4605"
+              ],
+              "corequisites": [],
+              "equivalencies": [
+                "COURSE:DSCI_3415"
+              ]
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4303",
+            "course_code": "CSCE 4303",
+            "title": "Embedded Systems on Chip Design",
+            "canonical_description": "Systems-on-Chip (SoCs) are at the core of most embedded computing and consumer devices nowadays. The course gives Hands-on coverage of the breadth of computer engineering within the context of SoCs, including on-chip memories and buses, I/O interfacing, RTL design of accelerators, firmware development and OS support. The course emphasizes hardware/software tradeoffs, and hardware/software codesign.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3304"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_4301"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 3304 and CSCE 4301",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3304",
+              "COURSE:CSCE_4301"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [
+                "COURSE:CSCE_4301"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4315",
+            "course_code": "CSCE 4315",
+            "title": "Internet of Things Networking Protocols",
+            "canonical_description": "Covers introduction to networking fundamentals, Internet of Things (IoT) performance metrics, energy-efficient networking, IoT link layer protocols, e.g., IEEE 802.11, Bluetooth, Bluetooth Low Energy (BLE) and IEEE 802.15.4, IoT network layer protocols, e.g., 6LoWPAN and Routing Protocol for Low Power and Lossy Networks (RPL), transport and application layer protocols, e.g., Constrained Application Protocol (CoAP) and Message Queue Telemetry Transport (MQTT).",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_2202"
+            },
+            "prerequisite_human_readable": "CSCE 2202",
+            "prerequisite_courses": [
+              "COURSE:CSCE_2202"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4421",
+            "course_code": "CSCE 4421",
+            "title": "Network Security",
+            "canonical_description": "Fundamentals of Network Security. Introduction to symmetric and public key cryptography. Analysis of network attacks such as DNS cache poisoning, malware, and DOS. Network defensive tools such as firewalls, intrusion detection systems, and endpoint detection systems. Practical implementation of network attacks. Practical configuration of defensive mechanisms.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_3423"
+            },
+            "prerequisite_human_readable": "CSCE 3423",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3423"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4423",
+            "course_code": "CSCE 4423",
+            "title": "Digital Forensics",
+            "canonical_description": "The Scope of Computer Forensics, Windows Operating and File Systems, Handling computer Hardware, Acquiring Evidence in a Computer Forensics Lab, Online Investigations,Documenting the Investigation, Admissibility of Digital Evidence, Network Forensics, Mobile Forensics, Photograph Forensics, Video Forensics, Vehicle Forensics, Mac Forensics, Case Studies.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_3301"
+            },
+            "prerequisite_human_readable": "CSCE 3301",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3301"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4424",
+            "course_code": "CSCE 4424",
+            "title": "Web Security",
+            "canonical_description": "Fundamentals of the security of web applications. Server-side vulnerabilities such as SQL injections, Server-side request forgery, path traversal, and command injection. Client-side vulnerabilities such as cross-site scripting, cross-site request forgery, and race conditions. Defensive mechanisms such as web application filters, content security policy, and secure coding techniques. Practical implementation of penetration testing tasks and report writing.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_2501"
+            },
+            "prerequisite_human_readable": "CSCE 2501",
+            "prerequisite_courses": [
+              "COURSE:CSCE_2501"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4501",
+            "course_code": "CSCE 4501",
+            "title": "Big Data Systems",
+            "canonical_description": "Data Cluster architectures, scheduling and resource management, big data stacks such as Hadoop, HDFS and Spark, big data processing techniques such as MapReduce, and an introduction to big data analytics.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Occasionally",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_2501"
+            },
+            "prerequisite_human_readable": "CSCE 2501",
+            "prerequisite_courses": [
+              "COURSE:CSCE_2501"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4502",
+            "course_code": "CSCE 4502",
+            "title": "Design of Web-based Systems",
+            "canonical_description": "Introduction to the Web as a platform, the Web as an n-tier client-server architecture, basic components of a web-based application, developing static and dynamic web pages. Enhancing Web pages using Scripting languages. Developing Web-based applications. Using Server-extension techniques and tools. Introduction to XML and its associated technologies. Emerging technologies and tools on the web. Wireless Web protocols and techniques.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_2501"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MOIS_3201"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 2501 or MOIS 3201 (for MICT students only)",
+            "prerequisite_courses": [
+              "COURSE:CSCE_2501",
+              "COURSE:MOIS_3201"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4602",
+            "course_code": "CSCE 4602",
+            "title": "Introduction to Artificial Neural Networks",
+            "canonical_description": "An introduction to basic concepts in the design, analysis, and application for computational neural networks. Mathematical models of biological neurons. Multilayer perceptrons backward error propagation. Hopfield networks and Boltzmann machines. Radial-basis function networks. Kohonen self-organizing feature maps. Adaptive Resonance Theory networks.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Occasionally",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:CSCE_3602"
+                    },
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:DSCI_3415"
+                    }
+                  ]
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_2132"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "(CSCE 3602 or DSCI 3415) and MACT 2132",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3602",
+              "COURSE:DSCI_3415",
+              "COURSE:MACT_2132"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4603",
+            "course_code": "CSCE 4603",
+            "title": "Fundamentals of Computer Vision",
+            "canonical_description": "Image acquisition, image transformations, gray level operations, histogram equalization, spatial filtering, edge detection, line and circle detection, generalized Hough transform, connected components labeling. Haar features, object detection with Adaboost, applications: face detection, open CV programming.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_1101"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:DSCI_1412"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 1101 or DSCI 1412",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1101",
+              "COURSE:DSCI_1412"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4604",
+            "course_code": "CSCE 4604",
+            "title": "Advanced Machine Learning",
+            "canonical_description": "Supervised and Unsupervised learning, Logistic and soft-max regression, Perception and multilayer neural networks, Back-propagation, Convolutional Neural Network (CNN), Recurrent Neural Network, Generative models, Reinforcement Learning, case studies.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3602"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:DSCI_3415"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 3602 or DSCI 3415",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3602",
+              "COURSE:DSCI_3415"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4605",
+            "course_code": "CSCE 4605",
+            "title": "Fundamentals of Data Mining",
+            "canonical_description": "Introduction to the fundamental concepts of data mining, motivation for and applications of data mining, text and web mining, and survey of techniques and models. Topics include: data pre-processing, frequent pattern mining, clustering, classification, and case studies using data sets taken from real-life applications, and use of data mining software.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:DSCI_3415"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3602"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "DSCI 3415 or CSCE 3602",
+            "prerequisite_courses": [
+              "COURSE:DSCI_3415",
+              "COURSE:CSCE_3602"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4702",
+            "course_code": "CSCE 4702",
+            "title": "Secure Systems Engineering",
+            "canonical_description": "This course introduces the main security problems found in contemporary systems and addresses how such problems are introduced and how we may work towards their eradication. The course enables students to treat security issues as an important and integral part of system design and development. It also provides them with a solid understanding of the basic ideas and techniques used in assessing and addressing security risks.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3701"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3401"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 3701 and CSCE 3401",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3701",
+              "COURSE:CSCE_3401"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4910",
+            "course_code": "CSCE 4910",
+            "title": "Guided Studies in Computer Science and Engineering",
+            "canonical_description": "Under the guidance of a faculty member, the student carries on a reading, research, or a project on a specific computer-science topic. The student will present his/her results by submitting a report or passing an examination as determined by the supervisor.",
+            "credits": "1-3",
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "APPROVAL",
+              "type": "instructor"
+            },
+            "prerequisite_human_readable": "Consent of instructor",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CSCE_4930",
+            "course_code": "CSCE 4930",
+            "title": "Selected Topics in Computer Science and Engineering",
+            "canonical_description": "Topics chosen according to special interests of faculty and major students. May be repeated for credit more than once if content changes.",
+            "credits": "1-3",
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "STANDING",
+              "level": "junior"
+            },
+            "prerequisite_human_readable": "Junior standing or higher",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          }
+        ]
+      },
+      "MACT": {
+        "department_name": "Mathematics",
+        "courses": [
+          {
+            "course_master_id": "COURSE:MACT_1111",
+            "course_code": "MACT 1111",
+            "title": "Algebra and Trigonometry",
+            "canonical_description": "Linear and quadratic equations, graphs, the circle, the rectangular hyperbola. Exponential and logarithmic functions, trigonometric functions. Systems of equations. Complex numbers. Roots of equations, zeros of polynomials. Binomial theorem, arithmetic and geometric series.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": null,
+            "prerequisite_human_readable": "Prerequisites: Thanawyia 'Amma Arts or equivalent.",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_1001",
+                "COURSE:MACT_1121",
+                "COURSE:MACT_1122",
+                "COURSE:MACT_2131",
+                "COURSE:PHYS_1011",
+                "COURSE:ENGR_3222"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_1122",
+            "course_code": "MACT 1122",
+            "title": "Calculus II",
+            "canonical_description": "The calculus of inverse trigonometric and hyperbolic functions. Applications of the definite integral for finding areas and volumes of revolutions. Techniques of integration. Improper integrals. Sequences and series: Convergence tests, power series, Taylor series with applications. Vectors and the three-dimensional space: Dot and cross products, lines and planes.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_1121"
+                },
+                {
+                  "op": "EXEMPTION",
+                  "reason": "exemption"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 1121 or exemption",
+            "prerequisite_courses": [
+              "COURSE:MACT_1121"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:MACT_2123",
+                "COURSE:MACT_2132",
+                "COURSE:MACT_2141",
+                "COURSE:MACT_3224",
+                "COURSE:PHYS_1021",
+                "COURSE:ENGR_2105"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_2123",
+            "course_code": "MACT 2123",
+            "title": "Calculus III",
+            "canonical_description": "Vector valued functions and space curves. Functions of several variables: Limits and continuity, partial derivatives, directional derivatives, maximum and minimum values, Lagrange multipliers. Multiple integrals: Double and triple integrals, change of variables in multiple integrals, including polar, cylindrical and spherical coordinates. Vector calculus: vector fields, The Fundamental Theorem of Line Integrals, Green’s Theorem, surface integrals, Stokes’ and Gauss’s Theorems.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:MACT_1122"
+            },
+            "prerequisite_human_readable": "MACT 1122",
+            "prerequisite_courses": [
+              "COURSE:MACT_1122"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_2131",
+            "course_code": "MACT 2131",
+            "title": "Discrete Mathematics",
+            "canonical_description": "Logic and Proofs: Basic propositional and predicate logic, rules of inference, direct and indirect proof methods (including contraposition and contradiction). Sets: Set operations, functions, sequences and finite series, infinite cardinalities, and matrices. Integers: divisibility and modular arithmetic, primes and the Fundamental Theorem of Arithmetic, the greatest common divisor, proofs by regular and strong mathematical induction. Combinatorics: Permutations and combinations, the Pigeonhole Principle. Relations and their properties, representing relations using Boolean matrices and digraphs, equivalence relations.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_1121"
+                },
+                {
+                  "op": "CONCURRENT",
+                  "course_master_id": "COURSE:MACT_1121"
+                },
+                {
+                  "op": "EXEMPTION",
+                  "reason": "exemption"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 1121 (concurrent or exemption)",
+            "prerequisite_courses": [
+              "COURSE:MACT_1121"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_2202",
+                "COURSE:CSCE_4201",
+                "COURSE:MACT_4133",
+                "COURSE:MACT_4135"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_2132",
+            "course_code": "MACT 2132",
+            "title": "Linear Algebra",
+            "canonical_description": "Solutions of systems of linear equations. Matrices and determinants. The space R^n, vector spaces and subspaces. Linear independence, basis and dimension. Inner product and orthonormal bases. Linear transformations. Eigenvalues and eigenvectors. Diagonalization. Various applications.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_1122"
+                },
+                {
+                  "op": "CONCURRENT",
+                  "course_master_id": "COURSE:MACT_1122"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 1122 or concurrent",
+            "prerequisite_courses": [
+              "COURSE:MACT_1122"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_4602",
+                "COURSE:MACT_3143",
+                "COURSE:MACT_4134",
+                "COURSE:MACT_4212"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_2141",
+            "course_code": "MACT 2141",
+            "title": "Differential Equations",
+            "canonical_description": "First-order differential equations and applications. Higher-order differential equations. Applications of second-order linear differential equations with constant coefficients. Systems of linear differential equations. Series solutions. Laplace transform.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:MACT_1122"
+            },
+            "prerequisite_human_readable": "MACT 1122",
+            "prerequisite_courses": [
+              "COURSE:MACT_1122"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:MACT_3143",
+                "COURSE:MACT_4212"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_3224",
+            "course_code": "MACT 3224",
+            "title": "Probability and Statistics",
+            "canonical_description": "A course in probability and statistics designed for computer science and engineering students. Probability is used to construct parametric models that often arise in computer science and engineering problems. Statistics is then used to estimate the parameters of these models based on available data, check the adequacy of the fitted models, and test specific hypotheses. Topics include random variables and their probability distributions including uniform, binomial, geometric, Poisson, normal, and exponential distributions; expected value of functions of random variables; stochastic simulation; sampling distributions; maximum likelihood and least squares methods of estimation; statistical inference including hypothesis testing and interval estimation.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_1122"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:ECON_3061"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 1122 or ECON 3061",
+            "prerequisite_courses": [
+              "COURSE:MACT_1122",
+              "COURSE:ECON_3061"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_3312",
+                "COURSE:MACT_4212"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025",
+              "notes": "Students cannot take both MACT 3211 and MACT 3224 for credit, nor can they take both MACT 3223 and MACT 3224 for credit."
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_3143",
+            "course_code": "MACT 3143",
+            "title": "Numerical Methods",
+            "canonical_description": "Number systems and types of errors. Solution of nonlinear equations. Interpolation and the Lagrange Polynomial. Systems of linear equations. Numerical Differentiation and integration. Numerical solutions of ordinary differential equations: Runge Kutta and Multistep Methods. Numerical solutions of partial differential equations: finite difference and elements of the Spectral Method. The course includes a programming based project.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Once a year",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:CSCE_1001"
+                    },
+                    {
+                      "op": "CONCURRENT",
+                      "course_master_id": "COURSE:CSCE_1001"
+                    }
+                  ]
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_2141"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_2132"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 1001 (prerequisite or concurrent), MACT 2141, and MACT 2132",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1001",
+              "COURSE:MACT_2141",
+              "COURSE:MACT_2132"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_4133",
+            "course_code": "MACT 4133",
+            "title": "Formal and Mathematical Logic",
+            "canonical_description": "Introduction to the goals and methods of mathematical logic. Propositional and predicate calculus (first order logic) are presented in detail. Goedel's completeness and incompleteness theorems, and some of the philosophico-mathematical problems in set theory, and alternative logics are discussed.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Occasionally",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:MACT_2131"
+            },
+            "prerequisite_human_readable": "MACT 2131",
+            "prerequisite_courses": [
+              "COURSE:MACT_2131"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_4134",
+            "course_code": "MACT 4134",
+            "title": "Modern Algebra",
+            "canonical_description": "Sets, integers, groups. Integral domains. Fields. Rings and ideals. Homomorphisms. Quotient groups and quotient rings.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Once a year",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "AND",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_2131"
+                    },
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_2132"
+                    }
+                  ]
+                },
+                {
+                  "op": "APPROVAL",
+                  "type": "instructor"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 2131 and MACT 2132, or consent of instructor",
+            "prerequisite_courses": [
+              "COURSE:MACT_2131",
+              "COURSE:MACT_2132"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_4135",
+            "course_code": "MACT 4135",
+            "title": "Graph Theory",
+            "canonical_description": "Set-theoretic definition of a graph. Bipartite graph, directed acyclic graph, and tournament. Matchings, Hall's Theorem and Berge's Theorem, as well as the algorithms of Prim, Dijkstra, Kruskal, and Ford-Fulkerson. Trees, connectivity and Menger's Theorem. Planarity and chromatic number. Choice of topics among: Graph Ramsey Theory, dynamic programming, Bayesian Belief Propagation, and treewidth.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Occasionally",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:MACT_2131"
+            },
+            "prerequisite_human_readable": "MACT 2131",
+            "prerequisite_courses": [
+              "COURSE:MACT_2131"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:MACT_4212",
+            "course_code": "MACT 4212",
+            "title": "Stochastic Processes",
+            "canonical_description": "Introduction to stochastic process, discrete time Markov chain, Poisson process, Compound Poisson Processes and Renewal Processes, continuous-time Markov Chain, Transition probabilities and limiting behavior for Markov Chains, Martingales, Brownian Motion, applications in finance and insurance.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Once a year",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_2132"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_2141"
+                },
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_3211"
+                    },
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_3224"
+                    }
+                  ]
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 2132, MACT 2141, and (MACT 3211 or MACT 3224)",
+            "prerequisite_courses": [
+              "COURSE:MACT_2132",
+              "COURSE:MACT_2141",
+              "COURSE:MACT_3211",
+              "COURSE:MACT_3224"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          }
+        ]
+      },
+      "PHYS": {
+        "department_name": "Physics",
+        "courses": [
+          {
+            "course_master_id": "COURSE:PHYS_1011",
+            "course_code": "PHYS 1011",
+            "title": "Physics 1: Classical Mechanics, Sound and Heat",
+            "canonical_description": "An introduction to classical mechanics covering vectors, applications of Newton’s laws, conservation laws and forces, motion in a plane, circular motion, equilibrium and elasticity, rotational motion, simple harmonic motion, energy and power; mechanical and sound waves, temperature, heat and the first law of thermodynamics.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring, Summer",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:MACT_1121"
+            },
+            "prerequisite_human_readable": "MACT 1121",
+            "prerequisite_courses": [
+              "COURSE:MACT_1121"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:PHYS_1021",
+                "COURSE:ENGR_2105"
+              ],
+              "corequisites": [
+                "COURSE:PHYS_1012"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025",
+              "notes": "Thanaweyya Amma Math or Science, German Abitur, French Baccalaureate, IGCSE O-Level Physics, International Baccalaureate, Canadian certificates, or American Diploma (with SATII in MATH or PHYS) students are allowed to take MACT 1121 concurrently with PHYS 1011."
+            }
+          },
+          {
+            "course_master_id": "COURSE:PHYS_1012",
+            "course_code": "PHYS 1012",
+            "title": "General Physics Laboratory I",
+            "canonical_description": "The fundamental quantities of physics are measured through selected experiments in mechanics, heat, and sound. Data are summarized, errors are estimated, and reports are presented.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring, Summer",
+            "hours": "One three-hour laboratory period",
+            "prerequisite_ast": {
+              "op": "CONCURRENT",
+              "course_master_id": "COURSE:PHYS_1011"
+            },
+            "prerequisite_human_readable": "Concurrent with PHYS 1011",
+            "prerequisite_courses": [
+              "COURSE:PHYS_1011"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:PHYS_1021"
+              ],
+              "corequisites": [
+                "COURSE:PHYS_1011"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:PHYS_1021",
+            "course_code": "PHYS 1021",
+            "title": "Physics 2: Electricity and Magnetism",
+            "canonical_description": "An introduction to electricity and magnetism covering the electric field, Gauss’s law, electric potential, capacitance, dc circuits, magnetic fields, Faraday’s and Ampere’s laws, time-varying fields, Maxwell’s equations in integral form and alternating currents.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring, Summer",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:PHYS_1011"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:PHYS_1012"
+                },
+                {
+                  "op": "OR",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_1122"
+                    },
+                    {
+                      "op": "CONCURRENT",
+                      "course_master_id": "COURSE:MACT_1122"
+                    }
+                  ]
+                }
+              ]
+            },
+            "prerequisite_human_readable": "PHYS 1011, PHYS 1012, and MACT 1122 (or concurrent)",
+            "prerequisite_courses": [
+              "COURSE:PHYS_1011",
+              "COURSE:PHYS_1012",
+              "COURSE:MACT_1122"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:PHYS_2211"
+              ],
+              "corequisites": [
+                "COURSE:PHYS_1022"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:PHYS_1022",
+            "course_code": "PHYS 1022",
+            "title": "General Physics Laboratory II",
+            "canonical_description": "The fundamental quantities of physics are measured through selected experiments in electricity, magnetism, and optics. Data are summarized, errors are estimated, and reports are presented.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring, Summer",
+            "hours": "One three-hour laboratory period",
+            "prerequisite_ast": {
+              "op": "CONCURRENT",
+              "course_master_id": "COURSE:PHYS_1021"
+            },
+            "prerequisite_human_readable": "Concurrent with PHYS 1021",
+            "prerequisite_courses": [
+              "COURSE:PHYS_1021"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [
+                "COURSE:PHYS_1021"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:PHYS_2211",
+            "course_code": "PHYS 2211",
+            "title": "Introduction to Electronics",
+            "canonical_description": "Foundation of DC and AC Circuit Analysis, Resonance and Filter Circuits, Semiconductor Basics, Diode and transistor fundamentals and applications, and feedback oscillators.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring, Summer",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:PHYS_1021"
+            },
+            "prerequisite_human_readable": "PHYS 1021",
+            "prerequisite_courses": [
+              "COURSE:PHYS_1021"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_2301",
+                "COURSE:CSCE_3303",
+                "COURSE:CSCE_3611",
+                "COURSE:CSCE_3312",
+                "COURSE:CSCE_3311"
+              ],
+              "corequisites": [
+                "COURSE:PHYS_2213"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:PHYS_2213",
+            "course_code": "PHYS 2213",
+            "title": "Electronics Lab",
+            "canonical_description": "Basic experiments in circuits and electronics.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring, Summer",
+            "prerequisite_ast": {
+              "op": "CONCURRENT",
+              "course_master_id": "COURSE:PHYS_2211"
+            },
+            "prerequisite_human_readable": "Concurrent with PHYS 2211",
+            "prerequisite_courses": [
+              "COURSE:PHYS_2211"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [
+                "COURSE:PHYS_2211"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          }
+        ]
+      },
+      "CHEM": {
+        "department_name": "Chemistry",
+        "courses": [
+          {
+            "course_master_id": "COURSE:CHEM_1005",
+            "course_code": "CHEM 1005",
+            "title": "General Chemistry I",
+            "canonical_description": "Chemical stoichiometry; atomic structure and periodicity; an overview of chemical bonding with a discussion of models and theories of covalent bonding; introduction to structure and chemistry of organic compounds.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring (occasionally Summer and Winter)",
+            "prerequisite_ast": {
+              "op": "EXTERNAL_CERT",
+              "certificate": "Thanawiya Amma Science or equivalent"
+            },
+            "prerequisite_human_readable": "Thanawiya Amma Science or equivalent",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:CHEM_1015",
+            "course_code": "CHEM 1015",
+            "title": "General Chemistry Laboratory",
+            "canonical_description": "Selected experiments in inorganic and organic chemistry.",
+            "credits": 1,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring (occasionally Summer and Winter)",
+            "hours": "One three-hour lab period",
+            "prerequisite_ast": {
+              "op": "EXTERNAL_CERT",
+              "certificate": "Thanawiya Amma Science or equivalent"
+            },
+            "prerequisite_human_readable": "Thanawiya Amma Science or equivalent",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          }
+        ]
+      },
+      "ENGR": {
+        "department_name": "Engineering",
+        "courses": [
+          {
+            "course_master_id": "COURSE:ENGR_2105",
+            "course_code": "ENGR 2105",
+            "title": "Engineering Mechanics",
+            "canonical_description": "Fundamentals of mechanics, statics of particles and rigid bodies, center of gravity and moment of inertia, internal forces in members, kinematics and kinetics of particles and rigid bodies. Engineering applications.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "AND",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:MACT_1122"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:PHYS_1011"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "MACT 1122 and PHYS 1011",
+            "prerequisite_courses": [
+              "COURSE:MACT_1122",
+              "COURSE:PHYS_1011"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:ENGR_3222",
+            "course_code": "ENGR 3222",
+            "title": "Engineering Economy",
+            "canonical_description": "Economic and cost concepts, the time value of money, single, multiple and series of cash flows, gradients, functional notation, nominal and effective interest rates, continuous compounding, rates of return. Computation and applications, economic feasibility of projects and worth of investments, comparison of alternatives. Replacement, deprecation and B.E. analysis. Introduction to risk analysis.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:MACT_1121"
+            },
+            "prerequisite_human_readable": "MACT 1121",
+            "prerequisite_courses": [
+              "COURSE:MACT_1121"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          }
+        ]
+      },
+      "ECNG": {
+        "department_name": "Electronics and Communications Engineering",
+        "courses": [
+          {
+            "course_master_id": "COURSE:ECNG_2101",
+            "course_code": "ECNG 2101",
+            "title": "Digital Logic Design",
+            "canonical_description": "The nature of digital logic and numbering systems. Boolean algebra, Karnaugh map, decision-making elements, memory elements, latches, flip-flops, design of combinational and sequential circuits, integrated circuits and logic families, shift registers, counters and combinational circuits, adders, subtracters, multiplication and division circuits, memory types. Exposure to logic design automation software. Introduction to FPGAs and HDL.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring, Summer",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:CSCE_1001"
+            },
+            "prerequisite_human_readable": "CSCE 1001. Concurrent with ECNG 2108L",
+            "prerequisite_courses": [
+              "COURSE:CSCE_1001"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:ECNG_4103",
+                "COURSE:CSCE_3301"
+              ],
+              "corequisites": [
+                "COURSE:ECNG_2108L",
+                "COURSE:CSCE_2303"
+              ],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          },
+          {
+            "course_master_id": "COURSE:ECNG_4103",
+            "course_code": "ECNG 4103",
+            "title": "Testing of Digital Circuits",
+            "canonical_description": "Basic concepts behind testing digital circuits. Causes of permanent and temporary failures. Test pattern generation techniques including exhaustive, Pseudo-exhaustive, Path sensitization, Critical path, Random and Pseudo-random Testing. Design for testability methods for testing Integrated Circuits. Techniques for testing Printed circuit boards.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Occasionally",
+            "prerequisite_ast": {
+              "op": "COURSE",
+              "course_master_id": "COURSE:ECNG_2101"
+            },
+            "prerequisite_human_readable": "ECNG 2101",
+            "prerequisite_courses": [
+              "COURSE:ECNG_2101"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          },
+          {
+            "course_master_id": "COURSE:ECNG_4930",
+            "course_code": "ECNG 4930",
+            "title": "Selected Topics in Electronics and Communications Engineering",
+            "canonical_description": "Course content will be selected each semester from current developments in the field of electronics engineering.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Occasionally",
+            "prerequisite_ast": {
+              "op": "STANDING",
+              "level": "senior"
+            },
+            "prerequisite_human_readable": "Senior standing",
+            "prerequisite_courses": [],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          }
+        ]
+      },
+      "DSCI": {
+        "department_name": "Data Science",
+        "courses": [
+          {
+            "course_master_id": "COURSE:DSCI_1412",
+            "course_code": "DSCI 1412",
+            "title": "Fundamentals of Data Science II",
+            "canonical_description": "Fundamentals of Python programming in the context of Data Science with a focus on relevant packages. Coverage of techniques for database handling, data manipulation, visualization and summarization. Study of probability basics and further statistics required for assessing sampling techniques, designing estimators, hypothesis testing and fitness tests. Focus on simulation basics, analytics, data interpretation and basic machine learning models such as regression and kNN classifiers.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "Fall, Spring",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:DSCI_1411"
+                },
+                {
+                  "op": "AND",
+                  "args": [
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:MACT_2222"
+                    },
+                    {
+                      "op": "COURSE",
+                      "course_master_id": "COURSE:CSCE_1001"
+                    }
+                  ]
+                }
+              ]
+            },
+            "prerequisite_human_readable": "DSCI 1411 or (MACT 2222 and CSCE 1001)",
+            "prerequisite_courses": [
+              "COURSE:DSCI_1411",
+              "COURSE:MACT_2222",
+              "COURSE:CSCE_1001"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [
+                "COURSE:CSCE_2501",
+                "COURSE:CSCE_3601",
+                "COURSE:CSCE_3602",
+                "COURSE:CSCE_4603"
+              ],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2024-12-29",
+              "source": "ce_catalog_2024"
+            }
+          }
+        ]
+      },
+      "DSGN": {
+        "department_name": "Design",
+        "courses": [
+          {
+            "course_master_id": "COURSE:DSGN_3400",
+            "course_code": "DSGN 3400",
+            "title": "Digital Game Design",
+            "canonical_description": "A multi-disciplinary course that guides students to form teams of designers, programmers, illustrators, and animators, to ideate, prototype, and present a digital game to a panel of professionals from the gaming industry. The course will include theoretical and practical components, group discussions, and assignments.",
+            "credits": 3,
+            "level": "undergrad",
+            "difficulty_level": "",
+            "when_offered": "",
+            "prerequisite_ast": {
+              "op": "OR",
+              "args": [
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:CSCE_3103"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:DSGN_3213"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:DSGN_3235"
+                },
+                {
+                  "op": "COURSE",
+                  "course_master_id": "COURSE:DSGN_3300"
+                }
+              ]
+            },
+            "prerequisite_human_readable": "CSCE 3103 or DSGN 3213 or DSGN 3235 or DSGN 3300",
+            "prerequisite_courses": [
+              "COURSE:CSCE_3103",
+              "COURSE:DSGN_3213",
+              "COURSE:DSGN_3235",
+              "COURSE:DSGN_3300"
+            ],
+            "relationships": {
+              "is_prerequisite_for": [],
+              "corequisites": [],
+              "equivalencies": []
+            },
+            "metadata": {
+              "last_updated": "2025-12-29",
+              "source": "ce_catalog_2025"
+            }
+          }
+        ]
+      }
+    }
+  }
+  

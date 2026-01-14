@@ -1,0 +1,355 @@
+[
+    {
+      "_id": "core_degree_requirements",
+      "section": "Core Curriculum & Degree Requirements",
+      "rules": [
+        "All students must meet all Core Curriculum requirements to graduate with an undergraduate degree from AUC.",
+        "Core Curriculum consists of three levels: Freshman Level, Secondary Level, and Capstone Level."
+      ],
+      "applies_to": [
+        "undergraduate"
+      ],
+      "tags": [
+        "degree_requirements",
+        "core_levels"
+      ]
+    },
+    {
+      "_id": "course_usage_double_counting",
+      "section": "Course Usage & Double Counting Rules",
+      "rules": [
+        "A course used to meet a Core Curriculum requirement at the Freshman or Secondary Level may not be used to meet: Major requirements, Concentration requirements, Specialization requirements, Collateral requirements, Major core requirements, Concentration electives, or General electives.",
+        "A course used to meet major requirements may not be used to meet Core Curriculum requirements, except at the Capstone Level.",
+        "Only at the Capstone Level, one course may double count for both Core Curriculum and major credit.",
+        "Core Curriculum courses may double count only in these cases: Secondary major (double major), Minor (subject to departmental rules), or Capstone in the major.",
+        "Core Curriculum courses may count toward a minor if consistent with departmental stipulations.",
+        "Core Curriculum courses cannot be taken from the same department as the student's first major.",
+        "Triple counting of courses is not allowed."
+      ],
+      "applies_to": [
+        "undergraduate"
+      ],
+      "tags": [
+        "double_counting",
+        "course_usage",
+        "major_requirements"
+      ]
+    },
+    {
+      "_id": "freshman_level_requirements",
+      "section": "Freshman Level Requirements (22 Credit Hours)",
+      "rules": [
+        "All students must complete 22 credit hours at the Freshman Level.",
+        "All students should complete RHET courses within their first two semesters.",
+        "All other Freshman Program courses should be completed by the end of the third semester.",
+        "Engineering students have until the end of the fourth semester to complete Freshman Program courses.",
+        "Students cannot proceed to junior-level status without completing all Freshman Level courses."
+      ],
+      "applies_to": [
+        "undergraduate"
+      ],
+      "tags": [
+        "freshman",
+        "credit_hours",
+        "progression",
+        "engineering"
+      ]
+    },
+    {
+      "_id": "rhet_core_lalt_sequencing",
+      "section": "RHET, CORE, and LALT Course Sequencing Rules",
+      "rules": [
+        "All students (except those with transfer credit or advanced standing) must take RHET 1010 and CORE 1010 as tandem courses in their first semester.",
+        "RHET 1010 and CORE 1010 together equal six credit hours.",
+        "Students cannot drop one of RHET 1010 or CORE 1010 without the other being dropped automatically.",
+        "Students must take RHET 1020 immediately after completing RHET 1010.",
+        "Failure to register for RHET 1020 on time results in a registration hold.",
+        "RHET 1020 must be taken concurrently with LALT 1020.",
+        "Dropping RHET 1020 automatically drops LALT 1020, and vice versa.",
+        "LALT 1020 must be passed before or during the semester of RHET 1020.",
+        "Completing RHET 1020 without passing LALT 1020 results in a registration hold.",
+        "Students retaking RHET 1010/CORE 1010 must enroll in a different theme.",
+        "Students may attempt RHET 1010, CORE 1010, and RHET 1020 up to three times in consecutive semesters.",
+        "A course drop counts as an attempt.",
+        "Failure after the second attempt results in a warning.",
+        "Failure after the third attempt may result in probation or dismissal."
+      ],
+      "applies_to": [
+        "undergraduate"
+      ],
+      "tags": [
+        "rhet",
+        "core",
+        "lalt",
+        "sequence",
+        "attempts",
+        "registration_hold"
+      ]
+    },
+    {
+      "_id": "scientific_pathways_foundations",
+      "section": "Scientific Thinking, Pathways, and Foundations",
+      "rules": [
+        "Students not in the School of Sciences and Engineering (SSE) must complete: Scientific Thinking, Pathways One (Scientific Encounters), and Pathways Two (Cultural Explorations).",
+        "Non-science students must complete the one-credit-hour lab with Pathways One.",
+        "SSE students fulfill Pathways One requirements within their major.",
+        "SSE students are required to complete Scientific Thinking.",
+        "Engineering students may take longer to complete Freshman requirements according to five-year plans."
+      ],
+      "applies_to": [
+        "undergraduate"
+      ],
+      "tags": [
+        "pathways",
+        "scientific_thinking",
+        "sse",
+        "engineering",
+        "lab_requirement"
+      ]
+    },
+    {
+      "_id": "major_declaration_progression",
+      "section": "Major Declaration & Academic Progression",
+      "rules": [
+        "Undeclared students may declare a major only after completing: RHET 1010 / CORE 1010, RHET 1020, LALT 1020, and Scientific Thinking.",
+        "During the semester of declaration, students must have completed or be enrolled in: All or all but one Pathways course, and Philosophical Thinking.",
+        "Students who wish to declare or proceed in their major without completing Freshman requirements must obtain written approval from the Office of the Dean of Undergraduate Studies."
+      ],
+      "applies_to": [
+        "undergraduate"
+      ],
+      "tags": [
+        "declaration",
+        "progression",
+        "prerequisites"
+      ]
+    },
+    {
+      "_id": "secondary_level_requirements",
+      "section": "Secondary Level Requirements (12 Credit Hours)",
+      "rules": [
+        "Students must complete 12 credit hours at the Secondary Level.",
+        "Every student must complete one course in the Humanities and Social Sciences category.",
+        "The course must be from a different department than the Freshman Pathways Two course.",
+        "The course must be from a different discipline than the Freshman Pathways Two course.",
+        "SEMR and CORE courses are exempt from department restrictions.",
+        "Secondary Level requirements must be completed by the end of the sixth semester.",
+        "Students may take only one course from this category.",
+        "Additional courses in this category do not count for credit."
+      ],
+      "applies_to": [
+        "undergraduate"
+      ],
+      "tags": [
+        "secondary",
+        "credit_hours",
+        "humanities",
+        "social_sciences"
+      ]
+    },
+    {
+      "_id": "capstone_level_requirements",
+      "section": "Capstone Level Requirements (6 Credit Hours)",
+      "rules": [
+        "Students must complete 6 credit hours at the Capstone Level.",
+        "Capstone requirements may be fulfilled through: Senior project or thesis, Senior seminar, Senior internship, Study abroad, Community engagement, Honors seminar, Interdisciplinary senior seminar, or A 400-level course counting toward a double major.",
+        "No more than 3 of the 6 credit hours may be taken in the department of the major.",
+        "All prerequisites apply.",
+        "Capstone requirements must be completed during the senior year.",
+        "Any study abroad or community-based learning course must be approved to count for Capstone credit."
+      ],
+      "applies_to": [
+        "undergraduate"
+      ],
+      "tags": [
+        "capstone",
+        "senior_year",
+        "study_abroad",
+        "internship"
+      ]
+    },
+    {
+      "_id": "arabic_language_requirement",
+      "section": "Arabic Language Requirement (Advising-Relevant)",
+      "rules": [
+        "All students must sit for the Arabic Placement Exam during their freshman year unless exempt.",
+        "The placement exam may be taken only once.",
+        "Based on placement results, students may be: Exempt, Required to take one Arabic course, or Required to take two sequenced Arabic courses.",
+        "Students who fail to take the placement exam within their first two semesters will receive a registration hold after completing 30 credit hours.",
+        "Students who fail to take the placement exam within their first two semesters will be required to take two Arabic courses.",
+        "All required Arabic courses must be completed before 90 credit hours.",
+        "Students required to take two Arabic courses must complete the first before 60 credit hours.",
+        "Failure to register for required Arabic courses on time results in registration holds."
+      ],
+      "applies_to": [
+        "undergraduate"
+      ],
+      "tags": [
+        "arabic",
+        "placement",
+        "registration_hold",
+        "credit_hours"
+      ]
+    },
+    {
+      "_id": "incomplete_grade_policy",
+      "section": "Incomplete Grade (\"I\") Policy",
+      "rules": [
+        "Under some circumstances graduate students who are unable to complete a course may be permitted to continue and complete it in the following semester.",
+        "In the meantime a grade of \"I\", meaning that the work is incomplete, is assigned in the course.",
+        "Students, whether registered or not, are responsible for making arrangements with the professor and the department of the major to complete the course in the following semester, otherwise, a tentative grade estimated on the basis of work already completed will be recorded.",
+        "Failure to complete the course within the following semester will result in the grade being recorded as 'F' unless a tentative grade has been previously reported.",
+        "Meanwhile, students are not allowed to register for the same course.",
+        "The incomplete grade 'I' will appear on the student's record along with the final grade received upon completion of outstanding work.",
+        "Any instructor submitting an incomplete grade must supplement this submission with a form to the Office of the Registrar (copies to the instructor and the student) giving the following information: Reason for the incomplete, The material which is lacking, Action necessary for removal of the incomplete.",
+        "The instructor will also inform the Registrar, on the same form, of the grade the student will receive if the outstanding work is not completed on time.",
+        "This grade is to be submitted to the registrar at the time of submitting the incomplete grade sheet.",
+        "Students who have an incomplete grade are not allowed to carry more than twelve credit hours a semester including the incomplete course or courses.",
+        "Students on warning who receive an incomplete are not permitted to register the following semester unless they have completed the coursework of the previous semester."
+      ],
+      "applies_to": [
+        "graduate",
+        "undergraduate"
+      ],
+      "tags": [
+        "incomplete_grade",
+        "registration_limit",
+        "grade_policy"
+      ]
+    },
+    {
+      "_id": "probation_dismissal_retake",
+      "section": "Probation, Dismissal, and Course Retake",
+      "rules": [
+        "If the student's grade point average falls below 'B' either in graduate work or in prerequisite course requirements, he/she will be placed on probation for one semester, during which time he/she must regain a 'B' average.",
+        "Students who receive an 'F' in any course will normally not be allowed to continue in the university (please refer to the course repeat policy in the following paragraph).",
+        "A student may also be dismissed from the university if he/she does not complete all requirements within the period specified under 'Residence'.",
+        "With the recommendation of the department and the approval of the school dean, a graduate student may be allowed to repeat one course in which a grade of 'B-, C+, C or F' is received.",
+        "This privilege may be exercised only once.",
+        "With the recommendation of the department and approval of the school dean, substitution is allowed for an elective or an infrequently offered course.",
+        "Both the original grade and the new grade will appear in the transcript but only the new grade will be used in calculating the GPA."
+      ],
+      "applies_to": [
+        "graduate",
+        "undergraduate"
+      ],
+      "tags": [
+        "probation",
+        "course_repeat",
+        "dismissal",
+        "gpa",
+        "grade_policy"
+      ]
+    },
+    {
+      "_id": "planned_leave_of_absence",
+      "section": "Planned Educational Leave of Absence",
+      "rules": [
+        "Students at The American University in Cairo may apply for a Planned Educational Leave of Absence.",
+        "A Planned Educational Leave of Absence is defined as a planned interruption or pause in a student's regular education during which the student temporarily ceases his or her formal studies at AUC while pursuing other activities that may assist in clarifying the student's educational goals.",
+        "The intent of the policy is to make it possible for a student to suspend his or her academic work, leave the campus without jeopardizing his or her rights and privileges, and later resume his or her studies with a minimum of procedural difficulty.",
+        "A student who is approved for a planned leave will be considered as maintaining his or her status as a continuing student.",
+        "Planned educational leaves may be granted for a variety of reasons or projects, but certain characteristics must be contained in any request for a leave: The leave must have a definite purpose relevant to the student's overall educational objectives and goals, The request must be for a specific period of time which should not exceed 2 regular semesters for students pursuing a graduate program, The student must plan to return to AUC at the conclusion of his or her leave."
+      ],
+      "applies_to": [
+        "graduate",
+        "undergraduate"
+      ],
+      "tags": [
+        "leave",
+        "planned_leave",
+        "enrollment_status"
+      ]
+    },
+    {
+      "_id": "regulations_planned_leave",
+      "section": "Regulations Governing Planned Educational Leave",
+      "rules": [
+        "An application for a Planned Educational Leave of Absence and additional information can be obtained from the Office of the Registrar.",
+        "The student must obtain the approval of his or her faculty advisor and the department chair of his or her major.",
+        "The student should be in good academic standing at the time of the leave request.",
+        "The leave application must be submitted to the Office of the Registrar by the start of the final examination period of the semester immediately preceding the requested leave.",
+        "The Office of the Registrar will notify the leave applicant of the status of the request after all of his or her final grades have been submitted.",
+        "The student may cancel a leave of absence as late as the first day of classes of the term for which the leave has been requested.",
+        "However, the deadlines for payment of the term bill and the penalties for late payment apply in such cases.",
+        "A degree student who discontinues active enrollment in degree studies without being granted a leave of absence, or a student granted a leave who does not return to active study at the close of the period of approved absence, will be considered to have withdrawn from the University and must apply for readmission and be subject to the regulations and requirements then in force.",
+        "The right to use university facilities is suspended while the leave is in effect, with the exception of library privileges subject to the approval of the department of major.",
+        "A Planned Educational Leave of Absence is counted as part of the time limitations.",
+        "A student returning from an approved leave remains under the requirements of the catalog that he or she was following upon the declaration of major.",
+        "Any academic credit during a Planned Educational Leave of Absence is accredited by AUC only if permission is granted in advance by the Registrar."
+      ],
+      "applies_to": [
+        "graduate",
+        "undergraduate"
+      ],
+      "tags": [
+        "leave_regulations",
+        "readmission",
+        "approval_process",
+        "time_limitations"
+      ]
+    },
+    {
+      "_id": "withdrawal_from_university",
+      "section": "Withdrawal from the University",
+      "rules": [
+        "Students who are unable to complete a semester because of illness or other emergency may be given permission to withdraw.",
+        "They must get a withdrawal form from the Office of the Registrar, obtain signatures as indicated on the form, and return the completed form to the Office of the Registrar.",
+        "The deadline for withdrawal from the university is one week prior to the last day of classes.",
+        "Withdrawal grades will be recorded for each course at the time the student receives permission to withdraw.",
+        "The grades are either WP, meaning that the student was doing satisfactory work at the time of withdrawal, or WF, meaning that the student was not doing satisfactory work at the time of withdrawal.",
+        "No academic credit is given for courses from which a student withdraws.",
+        "A student who withdraws from the university and later wishes to return must apply for readmission.",
+        "Readmission is not granted automatically."
+      ],
+      "applies_to": [
+        "graduate",
+        "undergraduate"
+      ],
+      "tags": [
+        "withdrawal",
+        "readmission",
+        "grade_policy",
+        "emergency"
+      ]
+    },
+    {
+      "_id": "transcripts_advising",
+      "section": "Transcripts (Advising-Relevant)",
+      "rules": [
+        "Students who graduate or who withdraw from the university in good standing are entitled to one free student transcript of their academic record.",
+        "No transcript of academic record will be issued during the examination, registration, or graduation periods.",
+        "Academic transcripts will not be issued when unsatisfied financial obligations to the university exist."
+      ],
+      "applies_to": [
+        "graduate",
+        "undergraduate"
+      ],
+      "tags": [
+        "transcript",
+        "records",
+        "financial_obligations"
+      ]
+    },
+    {
+      "_id": "non_degree_academic_regulations",
+      "section": "Non-Degree Academic Regulations (Advising-Relevant)",
+      "rules": [
+        "Since non-degree students are usually seeking credit for transfer to other institutions, not all of the academic regulations in this section are applicable to them.",
+        "They will be primarily concerned about the academic regulations of their home institutions to ensure that they receive maximum possible credit for their work at AUC.",
+        "Non-degree students should note the sections pertaining to registration, change of courses, academic load, grades, warning, incomplete work, class attendance, and transcripts in the graduate section, as appropriate.",
+        "Foreign students who wish to transfer their ALU (Arabic Language Unit) special program credits towards a degree in a regular AUC program should get the approval of the ALU Director.",
+        "Those wishing to transfer credits to their home universities should check these universities' policies before coming to Cairo."
+      ],
+      "applies_to": [
+        "non-degree",
+        "international"
+      ],
+      "tags": [
+        "non_degree",
+        "transfer",
+        "alu",
+        "credit_transfer"
+      ]
+    }
+  ]

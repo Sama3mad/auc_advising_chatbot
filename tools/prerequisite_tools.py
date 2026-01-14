@@ -20,6 +20,8 @@ def check_prerequisites_satisfied(course_code: str, completed_courses: list) -> 
     """
     Check if a student has satisfied the prerequisites for a course given their completed courses.
     Understands AND/OR logic in prerequisites.
+    Also checks corequisite relationships: if this course is a corequisite of another course,
+    it inherits that course's prerequisites.
     
     Args:
         course_code: The course code to check (e.g., "CSCE 3312")
@@ -37,10 +39,23 @@ def check_prerequisites_satisfied(course_code: str, completed_courses: list) -> 
     if not course:
         return f"Course {course_code} not found."
     
+    # Check if this course is a corequisite of another course
+    # If so, we need to check that other course's prerequisites too
+    corequisite_of_courses = kb.get_courses_with_corequisite(course_code)
+    
     # Get prerequisite AST
     prereq_ast = kb.get_prerequisite_ast(course_code)
     
-    if not prereq_ast:
+    # If this course is a corequisite of another course, we need to check that course's prerequisites too
+    coreq_prereq_asts = []
+    if corequisite_of_courses:
+        for coreq_course in corequisite_of_courses:
+            coreq_ast = kb.get_prerequisite_ast(coreq_course.get("course_code"))
+            if coreq_ast:
+                coreq_prereq_asts.append((coreq_course, coreq_ast))
+    
+    # If no direct prerequisites and no corequisite prerequisites, then no prerequisites needed
+    if not prereq_ast and not coreq_prereq_asts:
         return f"{course['course_code']}: {course['title']}\nNo prerequisites required. You can take this course!"
     
     # Build a map of completed course master IDs
@@ -106,17 +121,57 @@ def check_prerequisites_satisfied(course_code: str, completed_courses: list) -> 
         return True, "Unknown prerequisite type"
     
     # Evaluate the prerequisite tree
-    satisfied, explanation = evaluate_prereq_ast(prereq_ast)
+    direct_satisfied = True
+    direct_explanation = "No prerequisites"
+    
+    if prereq_ast:
+        direct_satisfied, direct_explanation = evaluate_prereq_ast(prereq_ast)
+    
+    # Evaluate corequisite prerequisites
+    coreq_satisfied = True
+    coreq_explanations = []
+    
+    for coreq_course, coreq_ast in coreq_prereq_asts:
+        coreq_sat, coreq_exp = evaluate_prereq_ast(coreq_ast)
+        coreq_satisfied = coreq_satisfied and coreq_sat
+        coreq_explanations.append({
+            'course': coreq_course,
+            'satisfied': coreq_sat,
+            'explanation': coreq_exp
+        })
+    
+    # Overall satisfaction: both direct and corequisite prerequisites must be satisfied
+    overall_satisfied = direct_satisfied and coreq_satisfied
     
     # Build response
     result = f"{course['course_code']}: {course['title']}\n\n"
-    result += f"Prerequisites Structure:\n{explanation}\n\n"
+    
+    if prereq_ast:
+        result += f"Direct Prerequisites:\n{direct_explanation}\n\n"
+    
+    if coreq_explanations:
+        result += "Corequisite Requirements:\n"
+        result += f"Note: {course['course_code']} is a corequisite of the following course(s), "
+        result += "so you must also satisfy their prerequisites:\n\n"
+        for coreq_info in coreq_explanations:
+            coreq_course = coreq_info['course']
+            result += f"  {coreq_course.get('course_code')}: {coreq_course.get('title')}\n"
+            result += f"    Prerequisites: {coreq_info['explanation']}\n"
+            if coreq_info['satisfied']:
+                result += "    Status: ✓ Satisfied\n\n"
+            else:
+                result += "    Status: ✗ NOT Satisfied\n\n"
+    
     result += f"Completed Courses: {', '.join(completed_courses) if completed_courses else 'None'}\n\n"
     
-    if satisfied:
+    if overall_satisfied:
         result += "✓ YES, you have satisfied all prerequisites for this course!"
     else:
         result += "✗ NO, you have NOT satisfied all prerequisites for this course."
+        if not direct_satisfied:
+            result += "\n\nDirect prerequisites are not satisfied."
+        if not coreq_satisfied:
+            result += "\n\nCorequisite course prerequisites are not satisfied."
         result += "\n\nYou need to complete the courses marked with ✗ before taking this course."
     
     return result
@@ -194,6 +249,23 @@ Prerequisite chain: {chain}
 
 Explanation: To take {target_course_code} ({target_course.get('title')}), you need {path[1]} as a prerequisite. {path[1]} in turn requires {check_course_code} ({check_course.get('title')}) as a prerequisite. Therefore, you cannot take {target_course_code} without completing {check_course_code} first."""
     else:
+        # Check if target course is a corequisite of another course
+        # If so, check that other course's prerequisites
+        coreq_courses = kb.get_courses_with_corequisite(target_course_code)
+        
+        # Check prerequisites of corequisite courses
+        for coreq_course in coreq_courses:
+            coreq_path = get_prereq_path(coreq_course.get("course_master_id"), check_master_id)
+            if coreq_path:
+                chain = " → ".join(coreq_path)
+                return f"""YES, {check_course_code} is required for {target_course_code}.
+
+Note: {target_course_code} is a corequisite of {coreq_course.get('course_code')} ({coreq_course.get('title')}).
+
+Prerequisite chain: {chain}
+
+Explanation: Since {target_course_code} must be taken together with {coreq_course.get('course_code')}, and {coreq_course.get('course_code')} requires {check_course_code} ({check_course.get('title')}) as a prerequisite, you cannot take {target_course_code} without completing {check_course_code} first."""
+        
         # Check direct prerequisites
         direct_prereqs = target_course.get("prerequisite_human_readable", "None")
         return f"""NO, {check_course_code} is not required for {target_course_code}.

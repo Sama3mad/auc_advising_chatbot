@@ -14,6 +14,7 @@ from support.context_manager import ContextManager
 from support.knowledge_base import KnowledgeBase
 from agents.course_info_agent import CourseInfoAgent
 from agents.academic_planning_agent import AcademicPlanningAgent
+from agents.policy_agent import PolicyAgent
 from agents.router_agent import RouterAgent
 
 
@@ -25,6 +26,7 @@ def print_welcome():
     print("\nAvailable Agents:")
     print("✓ Course Information Agent - Course details, prerequisites, search")
     print("✓ Academic Planning Agent - Degree requirements, catalogs, specializations")
+    print("✓ Policy & Core Rules Agent - Core Curriculum rules and university policies")
     print("✓ Router Agent - Automatically routes your questions")
     print("\nFeatures:")
     print("• Intelligent question routing")
@@ -121,11 +123,13 @@ def main():
     # Initialize specialized agents
     course_agent = CourseInfoAgent(context_manager, knowledge_base)
     planning_agent = AcademicPlanningAgent(context_manager, knowledge_base)
+    policy_agent = PolicyAgent(context_manager, knowledge_base)
     
     # Create agents dictionary
     agents = {
         "course_info": course_agent,
         "academic_planning": planning_agent,
+        "policies": policy_agent,
     }
     
     # Initialize router agent

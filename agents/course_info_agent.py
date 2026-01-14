@@ -4,7 +4,7 @@ Course Information Agent
 Handles all course-related queries: details, prerequisites, search, etc.
 """
 
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 import json
@@ -14,7 +14,7 @@ import os
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from config.settings import GOOGLE_API_KEY, LLM_MODEL, LLM_TEMPERATURE, MAX_ITERATIONS
+from config.settings import KWAIPILOT_API_KEY, LLM_MODEL, LLM_TEMPERATURE, MAX_ITERATIONS
 from support.context_manager import ContextManager
 from support.knowledge_base import KnowledgeBase
 from tools import COURSE_INFO_TOOLS, TOOL_DESCRIPTIONS
@@ -34,9 +34,10 @@ class CourseInfoAgent:
             context_manager: Context manager instance
             knowledge_base: Knowledge base instance
         """
-        self.llm = ChatGoogleGenerativeAI(
+        self.llm = ChatOpenAI(
             model=LLM_MODEL,
-            google_api_key=GOOGLE_API_KEY,
+            api_key=KWAIPILOT_API_KEY,
+            base_url="https://openrouter.ai/api/v1",
             temperature=LLM_TEMPERATURE
         )
         

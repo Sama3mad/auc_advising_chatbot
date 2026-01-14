@@ -1,0 +1,528 @@
+{
+  "catalog_id": "catalog_2023-2024",
+  "programs": [
+    {
+      "program_id": "PROGRAM:CE_BS",
+      "title": "Computer Engineering (B.S.)",
+      "degree_type": "Bachelor of Science",
+      "total_credits_required": 150,
+      "description": "Computer engineering is defined as the discipline that embodies the science and technology of design, construction, implementation, and maintenance of software and hardware components of modern computing systems and computer-controlled equipment.",
+      "accreditation": {
+        "body": "ABET Engineering Accreditation Commission",
+        "criteria": "General Criteria and Program Criteria for Electrical, Computer, Communications, Telecommunication(s) and Similarly Named Engineering Programs"
+      },
+      "program_objectives": [
+        "A professional team member in a multidisciplinary environment, local or global",
+        "A distinguished member of computer engineering field through promotion, or professional development",
+        "A successful member of an advanced academic or research organization",
+        "A successful entrepreneur"
+      ],
+      "program_learning_outcomes": [
+        {
+          "outcome_id": "PLO1",
+          "description": "An ability to identify, formulate, and solve complex engineering problems by applying principles of engineering, science, and mathematics"
+        },
+        {
+          "outcome_id": "PLO2",
+          "description": "An ability to apply engineering design to produce solutions that meet specified needs with consideration of public health, safety, and welfare, as well as global, cultural, social, environmental, and economic factors"
+        },
+        {
+          "outcome_id": "PLO3",
+          "description": "An ability to communicate effectively with a range of audiences"
+        },
+        {
+          "outcome_id": "PLO4",
+          "description": "An ability to recognize ethical and professional responsibilities in engineering situations and make informed judgments, which must consider the impact of engineering solutions in global, economic, environmental, and societal contexts"
+        },
+        {
+          "outcome_id": "PLO5",
+          "description": "An ability to function effectively on a team whose members together provide leadership, create a collaborative and inclusive environment, establish goals, plan tasks, and meet objectives"
+        },
+        {
+          "outcome_id": "PLO6",
+          "description": "An ability to develop and conduct appropriate experimentation, analyze and interpret data, and use engineering judgment to draw conclusions"
+        },
+        {
+          "outcome_id": "PLO7",
+          "description": "An ability to acquire and apply new knowledge as needed, using appropriate learning strategies"
+        }
+      ],
+      "specializations": [
+        {
+          "specialization_id": "SPEC:NONE",
+          "name": "None",
+          "description": "Bachelor of Science in Computer Engineering without specialization"
+        },
+        {
+          "specialization_id": "SPEC:EMBEDDED",
+          "name": "Embedded Systems",
+          "description": "Specialization in embedded systems design and development"
+        },
+        {
+          "specialization_id": "SPEC:AI",
+          "name": "Artificial Intelligence",
+          "description": "Specialization in artificial intelligence and machine learning"
+        }
+      ],
+      
+      "program_requirements": {
+        "core_curriculum": {
+          "category_id": "REQ:CORE",
+          "credits_required": 33,
+          "notes": "The remaining 7 credit hours required to satisfy the core are fulfilled by the concentration Science/lab (4 crs) and the capstone projects CSCE 4980, CSCE 4981 (3 crs).",
+          
+          "freshman_requirements": {
+            "subcategory_id": "REQ:CORE:FRESHMAN",
+            "credits_required": 15,
+            "required_course_master_ids": [
+              "COURSE:RHET_1010",
+              "COURSE:CORE_1010",
+              "COURSE:RHET_1020",
+              "COURSE:LALT_1020",
+              "COURSE:SCI_1020",
+              "COURSE:PHIL_2100"
+            ]
+          },
+          
+          "cultural_foundations": {
+            "subcategory_id": "REQ:CORE:CULTURAL",
+            "credits_required": 3,
+            "selection_rule": "choose_one",
+            "allowed_course_master_ids": [
+              "COURSE:AMST_1090",
+              "COURSE:AMST_1091",
+              "COURSE:AMST_1099",
+              "COURSE:ANTH_1099",
+              "COURSE:ARIC_1099",
+              "COURSE:ARIC_1102",
+              "COURSE:ARIC_1300",
+              "COURSE:ARTV_1099",
+              "COURSE:CORE_1099",
+              "COURSE:CORE_1130",
+              "COURSE:CORE_1140",
+              "COURSE:ECLT_1023",
+              "COURSE:ECLT_1099",
+              "COURSE:EDUC_1099",
+              "COURSE:EGPT_1080",
+              "COURSE:EGPT_1099",
+              "COURSE:HIST_1099",
+              "COURSE:PHIL_1099",
+              "COURSE:POLS_1001",
+              "COURSE:SEMR_1023",
+              "COURSE:SEMR_1099",
+              "COURSE:SEMR_1110",
+              "COURSE:SOC_1099",
+              "COURSE:THTR_1099",
+              "COURSE:THTR_1101"
+            ]
+          },
+          
+          "secondary_level": {
+            "subcategory_id": "REQ:CORE:SECONDARY",
+            "credits_required": 12,
+            "notes": "12 credit hours distributed across four categories",
+            
+            "categories": [
+              {
+                "category_id": "REQ:CORE:SEC:HUMANITIES",
+                "category_name": "Humanities and Social Sciences",
+                "credits_required": 3,
+                "selection_rule": "choose_one",
+                "allowed_course_master_ids": [
+                  "COURSE:ANTH_2099",
+                  "COURSE:ANTH_2101",
+                  "COURSE:ANTH_3099",
+                  "COURSE:ARCH_2211",
+                  "COURSE:ARIC_2099",
+                  "COURSE:ARIC_2270",
+                  "COURSE:ARIC_2271",
+                  "COURSE:ARIC_3020",
+                  "COURSE:ARIC_3269",
+                  "COURSE:ARIC_3271",
+                  "COURSE:ARIC_3272",
+                  "COURSE:ARIC_3323",
+                  "COURSE:ARIC_3337",
+                  "COURSE:ARIC_3353",
+                  "COURSE:ARIC_3405",
+                  "COURSE:ARIC_3435",
+                  "COURSE:ARTV_2113",
+                  "COURSE:ARTV_2200",
+                  "COURSE:ARTV_3115",
+                  "COURSE:ARTV_3270",
+                  "COURSE:CORE_2099",
+                  "COURSE:CORE_2142",
+                  "COURSE:CREL_2099",
+                  "COURSE:DSGN_2113",
+                  "COURSE:DSGN_2200",
+                  "COURSE:ECLT_2010",
+                  "COURSE:ECLT_2011",
+                  "COURSE:ECLT_3005",
+                  "COURSE:ECLT_3006",
+                  "COURSE:ECLT_3010",
+                  "COURSE:ECLT_3014",
+                  "COURSE:ECLT_3060",
+                  "COURSE:ECLT_3070",
+                  "COURSE:ECON_2011",
+                  "COURSE:ECON_2021",
+                  "COURSE:EDUC_2099",
+                  "COURSE:FILM_2099",
+                  "COURSE:FILM_3150",
+                  "COURSE:HIST_2403",
+                  "COURSE:LING_2200",
+                  "COURSE:LING_2210",
+                  "COURSE:LING_2220",
+                  "COURSE:LING_2230",
+                  "COURSE:LING_2240",
+                  "COURSE:LING_2250",
+                  "COURSE:LING_3320",
+                  "COURSE:LING_3350",
+                  "COURSE:MUSC_2200",
+                  "COURSE:PHIL_2010",
+                  "COURSE:PHIL_2099",
+                  "COURSE:PHIL_2112",
+                  "COURSE:PHIL_2113",
+                  "COURSE:PHIL_2117",
+                  "COURSE:PHIL_3014",
+                  "COURSE:PHIL_3017",
+                  "COURSE:PPAD_3198",
+                  "COURSE:PSYC_1000",
+                  "COURSE:PSYC_2099",
+                  "COURSE:PSYC_3003",
+                  "COURSE:RHET_2099",
+                  "COURSE:RHET_3099",
+                  "COURSE:RHET_3110",
+                  "COURSE:RHET_3120",
+                  "COURSE:RHET_3150",
+                  "COURSE:RHET_3210",
+                  "COURSE:RHET_3220",
+                  "COURSE:RHET_3230",
+                  "COURSE:RHET_3250",
+                  "COURSE:RHET_3310",
+                  "COURSE:RHET_3330",
+                  "COURSE:RHET_3340",
+                  "COURSE:RHET_3350",
+                  "COURSE:SOC_2099",
+                  "COURSE:SOC_2101",
+                  "COURSE:THTR_1201",
+                  "COURSE:THTR_2099",
+                  "COURSE:THTR_3103",
+                  "COURSE:THTR_3501"
+                ]
+              },
+              {
+                "category_id": "REQ:CORE:SEC:ARAB",
+                "category_name": "Arab World Studies",
+                "credits_required": 3,
+                "selection_rule": "choose_one",
+                "allowed_course_master_ids": [
+                  "COURSE:ALNG_3333",
+                  "COURSE:ALWT_3919",
+                  "COURSE:ANTH_2005",
+                  "COURSE:ANTH_3301",
+                  "COURSE:ANTH_3305",
+                  "COURSE:ARIC_2001",
+                  "COURSE:ARIC_2097",
+                  "COURSE:ARIC_2101",
+                  "COURSE:ARIC_2102",
+                  "COURSE:ARIC_2103",
+                  "COURSE:ARIC_2104",
+                  "COURSE:ARIC_2205",
+                  "COURSE:ARIC_2346",
+                  "COURSE:ARIC_3097",
+                  "COURSE:ARIC_3098",
+                  "COURSE:ARIC_3104",
+                  "COURSE:ARIC_3106",
+                  "COURSE:ARIC_3107",
+                  "COURSE:ARIC_3108",
+                  "COURSE:ARIC_3114",
+                  "COURSE:ARIC_3115",
+                  "COURSE:ARIC_3116",
+                  "COURSE:ARIC_3197",
+                  "COURSE:ARIC_3321",
+                  "COURSE:ARIC_3324",
+                  "COURSE:ARIC_3343",
+                  "COURSE:ARIC_3344",
+                  "COURSE:ARIC_3355",
+                  "COURSE:ARIC_3397",
+                  "COURSE:CORE_2097",
+                  "COURSE:CREL_2097",
+                  "COURSE:DSGN_3117",
+                  "COURSE:ECON_2051",
+                  "COURSE:FILM_3120",
+                  "COURSE:HIST_2097",
+                  "COURSE:HIST_2203",
+                  "COURSE:HIST_2204",
+                  "COURSE:HIST_3208",
+                  "COURSE:HIST_3288",
+                  "COURSE:MUSC_3250",
+                  "COURSE:SOC_2005",
+                  "COURSE:SOC_2301",
+                  "COURSE:SOC_2302"
+                ]
+              },
+              {
+                "category_id": "REQ:CORE:SEC:EGYPT",
+                "category_name": "Egypt Studies",
+                "credits_required": 3,
+                "selection_rule": "choose_one",
+                "allowed_course_master_ids": [
+                  "COURSE:ANTH_2006",
+                  "COURSE:ANTH_2098",
+                  "COURSE:ANTH_3098",
+                  "COURSE:ARIC_2098",
+                  "COURSE:ARIC_2206",
+                  "COURSE:ARIC_3109",
+                  "COURSE:ARIC_3346",
+                  "COURSE:CHEM_2001",
+                  "COURSE:CORE_2098",
+                  "COURSE:EDUC_2041",
+                  "COURSE:EGPT_2020",
+                  "COURSE:EGPT_3211",
+                  "COURSE:EGPT_3212",
+                  "COURSE:PSYC_3021",
+                  "COURSE:PSYC_3022",
+                  "COURSE:SOC_2201",
+                  "COURSE:SOC_2401",
+                  "COURSE:SOC_2402",
+                  "COURSE:SOC_2403",
+                  "COURSE:SOC_3085"
+                ]
+              },
+              {
+                "category_id": "REQ:CORE:SEC:GLOBAL",
+                "category_name": "Global Studies",
+                "credits_required": 3,
+                "selection_rule": "choose_one",
+                "allowed_course_master_ids": [
+                  "COURSE:AMST_2096",
+                  "COURSE:AMST_2190",
+                  "COURSE:AMST_3100",
+                  "COURSE:ANTH_2096",
+                  "COURSE:ANTH_3015",
+                  "COURSE:ANTH_3075",
+                  "COURSE:ANTH_3080",
+                  "COURSE:ANTH_3096",
+                  "COURSE:ANTH_3302",
+                  "COURSE:ARIC_2096",
+                  "COURSE:ARIC_3268",
+                  "COURSE:ARIC_3319",
+                  "COURSE:ARIC_3345",
+                  "COURSE:CORE_2096",
+                  "COURSE:CREL_2096",
+                  "COURSE:CREL_2603",
+                  "COURSE:DSGN_3118",
+                  "COURSE:ECLT_2019",
+                  "COURSE:ECLT_3001",
+                  "COURSE:ECLT_3002",
+                  "COURSE:ECLT_3008",
+                  "COURSE:ECLT_3011",
+                  "COURSE:ECLT_3030",
+                  "COURSE:ECLT_3032",
+                  "COURSE:ECLT_3033",
+                  "COURSE:ECLT_3045",
+                  "COURSE:ECLT_3046",
+                  "COURSE:ECLT_3048",
+                  "COURSE:ECLT_3052",
+                  "COURSE:ECLT_3053",
+                  "COURSE:ECLT_3099",
+                  "COURSE:EDUC_2011",
+                  "COURSE:EDUC_3011",
+                  "COURSE:FILM_3115",
+                  "COURSE:FILM_3125",
+                  "COURSE:HIST_2096",
+                  "COURSE:HIST_2104",
+                  "COURSE:HIST_2301",
+                  "COURSE:HIST_2501",
+                  "COURSE:LING_2201",
+                  "COURSE:LING_3075",
+                  "COURSE:MENG_2200",
+                  "COURSE:MUSC_2000",
+                  "COURSE:MUSC_2010",
+                  "COURSE:MUSC_3099",
+                  "COURSE:PHIL_2200",
+                  "COURSE:PHIL_3016",
+                  "COURSE:POLS_2096",
+                  "COURSE:POLS_2405",
+                  "COURSE:PPAD_2096",
+                  "COURSE:RHET_3130",
+                  "COURSE:SOC_3025",
+                  "COURSE:SOC_3045",
+                  "COURSE:SOC_3060",
+                  "COURSE:SOC_3303",
+                  "COURSE:SOC_3304",
+                  "COURSE:SOC_3305"
+                ]
+              }
+            ]
+          },
+          
+          "capstone_project": {
+            "subcategory_id": "REQ:CORE:CAPSTONE",
+            "credits_required": 3,
+            "notes": "Capstone project requirement fulfilled by Senior Projects (CSCE 4980 and CSCE 4981 provide 3 credits total)"
+          }
+        },
+        
+        "engineering_core": {
+          "category_id": "REQ:ENG_CORE",
+          "credits_required": 40,
+          "required_course_master_ids": [
+            "COURSE:CHEM_1005",
+            "COURSE:CHEM_1015",
+            "COURSE:ENGR_2105",
+            "COURSE:ENGR_3222",
+            "COURSE:MACT_1122",
+            "COURSE:MACT_2123",
+            "COURSE:MACT_2131",
+            "COURSE:MACT_2132",
+            "COURSE:MACT_2141",
+            "COURSE:MACT_3224",
+            "COURSE:PHYS_1011",
+            "COURSE:PHYS_1012",
+            "COURSE:PHYS_1021",
+            "COURSE:PHYS_1022",
+            "COURSE:PHYS_2211",
+            "COURSE:PHYS_2213"
+          ]
+        },
+        
+        "concentration": {
+          "category_id": "REQ:CONCENTRATION",
+          "credits_required": 59,
+          "required_course_master_ids": [
+            "COURSE:CSCE_1001",
+            "COURSE:CSCE_1101",
+            "COURSE:CSCE_1102",
+            "COURSE:CSCE_2202",
+            "COURSE:CSCE_2203",
+            "COURSE:CSCE_2211",
+            "COURSE:CSCE_2301",
+            "COURSE:CSCE_2302",
+            "COURSE:CSCE_2303",
+            "COURSE:CSCE_2501",
+            "COURSE:CSCE_3301",
+            "COURSE:CSCE_3302",
+            "COURSE:CSCE_3303",
+            "COURSE:CSCE_3304",
+            "COURSE:CSCE_3312",
+            "COURSE:CSCE_3313",
+            "COURSE:CSCE_3401",
+            "COURSE:CSCE_3402",
+            "COURSE:CSCE_3611",
+            "COURSE:CSCE_3701",
+            "COURSE:CSCE_4301",
+            "COURSE:CSCE_4302",
+            "COURSE:CSCE_4411",
+            "COURSE:CSCE_4950",
+            "COURSE:CSCE_4980",
+            "COURSE:CSCE_4981"
+          ]
+        },
+        
+        "concentration_electives": {
+          "category_id": "REQ:CONC_ELECTIVES",
+          "credits_required": 15,
+          "rules_by_specialization": [
+            {
+              "specialization_id": "SPEC:NONE",
+              "description": "For the Bachelor of Science in Computer Engineering",
+              "requirement": "Fifteen credit hours must be taken from the Computer Engineering elective courses",
+              "constraints": {
+                "max_mact_credits": 9
+              }
+            },
+            {
+              "specialization_id": "SPEC:EMBEDDED",
+              "description": "For the Bachelor of Science in Computer Engineering with specialization in Embedded Systems",
+              "requirement": "Nine credit hours of group A. The remaining six credit hours must be satisfied by other Computer Engineering elective courses",
+              "elective_groups": [
+                {
+                  "group_id": "EGROUP:EMBEDDED_A",
+                  "group_name": "Embedded Systems Group A",
+                  "min_credits": 9,
+                  "selection_rule": "minimum",
+                  "allowed_course_master_ids": [
+                    "COURSE:CSCE_4303",
+                    "COURSE:CSCE_4315",
+                    "COURSE:CSCE_4930"
+                  ],
+                  "notes": "CSCE 4930 must be relevant to Embedded Systems with department approval. Can be taken more than once with a maximum of 6 credits. Graduate courses relevant to Embedded Systems (max 6 credits) may be taken exceptionally."
+                }
+              ]
+            },
+            {
+              "specialization_id": "SPEC:AI",
+              "description": "For the Bachelor of Science in Computer Engineering with specialization in Artificial Intelligence",
+              "requirement": "Three credit hours from group B and a minimum of nine credit hours from group C. The remaining three credit hours must be satisfied by other Computer Engineering elective courses",
+              "elective_groups": [
+                {
+                  "group_id": "EGROUP:AI_B",
+                  "group_name": "AI Group B",
+                  "min_credits": 3,
+                  "selection_rule": "choose_one",
+                  "allowed_course_master_ids": [
+                    "COURSE:CSCE_3601",
+                    "COURSE:CSCE_3602"
+                  ]
+                },
+                {
+                  "group_id": "EGROUP:AI_C",
+                  "group_name": "AI Group C",
+                  "min_credits": 9,
+                  "selection_rule": "minimum",
+                  "allowed_course_master_ids": [
+                    "COURSE:CSCE_4602",
+                    "COURSE:CSCE_4603",
+                    "COURSE:CSCE_4604",
+                    "COURSE:CSCE_4930"
+                  ],
+                  "notes": "CSCE 4930 must be relevant to Artificial Intelligence with department approval. Can be taken more than once with a maximum of 6 credits. Graduate courses relevant to AI (max 6 credits) may be taken exceptionally."
+                }
+              ]
+            }
+          ],
+          "available_electives": [
+            "COURSE:CSCE_3101",
+            "COURSE:CSCE_3102",
+            "COURSE:CSCE_3103",
+            "COURSE:CSCE_3104",
+            "COURSE:CSCE_3311",
+            "COURSE:CSCE_3601",
+            "COURSE:CSCE_3602",
+            "COURSE:CSCE_4101",
+            "COURSE:CSCE_4201",
+            "COURSE:CSCE_4303",
+            "COURSE:CSCE_4315",
+            "COURSE:CSCE_4421",
+            "COURSE:CSCE_4501",
+            "COURSE:CSCE_4502",
+            "COURSE:CSCE_4602",
+            "COURSE:CSCE_4603",
+            "COURSE:CSCE_4604",
+            "COURSE:CSCE_4621",
+            "COURSE:CSCE_4701",
+            "COURSE:CSCE_4702",
+            "COURSE:CSCE_4910",
+            "COURSE:CSCE_4930",
+            "COURSE:ECNG_4103",
+            "COURSE:ECNG_4930",
+            "COURSE:MACT_3143",
+            "COURSE:MACT_4133",
+            "COURSE:MACT_4134",
+            "COURSE:MACT_4135",
+            "COURSE:MACT_4212",
+            "COURSE:MGMT_3201"
+          ]
+        },
+        
+        "general_electives": {
+          "category_id": "REQ:GEN_ELECTIVES",
+          "credits_required": 3,
+          "notes": "Any university courses approved by advisor"
+        }
+      }
+    }
+  ],
+  "course_overrides": [],
+  "source_document": "source_docs/ce_catalog_2023.pdf"
+}
